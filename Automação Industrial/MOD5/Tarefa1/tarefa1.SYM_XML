@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<CoDeSysSymbolTable>
+	<SymbolHeader>
+		<Version>-1</Version>
+		<ProjectId>282220</ProjectId>
+		<WorkbenchVersion>2.3.9.62</WorkbenchVersion>
+		<CompilerVersion>2.3.9.62</CompilerVersion>
+	</SymbolHeader>
+	<SymbolTypeList>
+		<TypeSimple TypeId="0" Size="4">REAL</TypeSimple>
+	</SymbolTypeList>
+	<SymbolVarList>
+		<Var Type="0" Flags="33554496" Access="98" RefId="4" Offset="232">.entrada</Var>
+		<Var Type="0" Flags="33554496" Access="98" RefId="4" Offset="236">.saida</Var>
+	</SymbolVarList>
+	<SymbolTaskList/>
+	<SymbolTargetSettings>
+		<MaxNumberOfPOUs>512</MaxNumberOfPOUs>
+		<Segments>
+			<Segment Area="0" RefId="0" Address="0" Size="32768" Attributes="0"/>
+			<Segment Area="0" RefId="1" Address="32768" Size="32768" Attributes="0"/>
+			<Segment Area="0" RefId="2" Address="65536" Size="32768" Attributes="0"/>
+			<Segment Area="1" RefId="3" Address="0" Size="32768" Attributes="2"/>
+			<Segment Area="0" RefId="4" Address="98304" Size="2097152" Attributes="1"/>
+		</Segments>
+	</SymbolTargetSettings>
+</CoDeSysSymbolTable>

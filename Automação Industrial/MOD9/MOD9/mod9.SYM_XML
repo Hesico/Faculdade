@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<CoDeSysSymbolTable>
+	<SymbolHeader>
+		<Version>-1</Version>
+		<ProjectId>843764</ProjectId>
+		<WorkbenchVersion>2.3.9.62</WorkbenchVersion>
+		<CompilerVersion>2.3.9.62</CompilerVersion>
+	</SymbolHeader>
+	<SymbolTypeList>
+		<TypeSimple TypeId="0" Size="4">REAL</TypeSimple>
+		<TypeSimple TypeId="1" Size="1">BOOL</TypeSimple>
+	</SymbolTypeList>
+	<SymbolVarList>
+		<Var Type="1" Flags="33554496" Access="98" RefId="4" Offset="289">.Ativo</Var>
+		<Var Type="0" Flags="33554496" Access="98" RefId="4" Offset="276">.Cagra</Var>
+		<Var Type="0" Flags="33554496" Access="98" RefId="4" Offset="302">.Deltat</Var>
+		<Var Type="0" Flags="33554496" Access="98" RefId="4" Offset="272">.Descarga</Var>
+		<Var Type="0" Flags="33554496" Access="98" RefId="4" Offset="323">.erro</Var>
+		<Var Type="0" Flags="33554496" Access="98" RefId="4" Offset="280">.Flow</Var>
+		<Var Type="0" Flags="33554496" Access="98" RefId="4" Offset="284">.Level</Var>
+		<Var Type="0" Flags="33554496" Access="98" RefId="4" Offset="335">.PV</Var>
+		<Var Type="1" Flags="33554496" Access="98" RefId="4" Offset="290">.Reset</Var>
+		<Var Type="1" Flags="33554496" Access="98" RefId="4" Offset="291">.ResetLight</Var>
+		<Var Type="0" Flags="33554496" Access="98" RefId="4" Offset="306">.SaidaBloco</Var>
+		<Var Type="0" Flags="33554496" Access="98" RefId="4" Offset="292">.SetPoint</Var>
+		<Var Type="1" Flags="33554496" Access="98" RefId="4" Offset="299">.SL</Var>
+		<Var Type="0" Flags="33554496" Access="98" RefId="4" Offset="339">.SP</Var>
+		<Var Type="1" Flags="33554496" Access="98" RefId="4" Offset="298">.Start</Var>
+		<Var Type="1" Flags="33554496" Access="98" RefId="4" Offset="300">.Stop</Var>
+		<Var Type="1" Flags="33554496" Access="98" RefId="4" Offset="301">.StopLight</Var>
+	</SymbolVarList>
+	<SymbolTaskList/>
+	<SymbolTargetSettings>
+		<MaxNumberOfPOUs>512</MaxNumberOfPOUs>
+		<Segments>
+			<Segment Area="0" RefId="0" Address="0" Size="32768" Attributes="0"/>
+			<Segment Area="0" RefId="1" Address="32768" Size="32768" Attributes="0"/>
+			<Segment Area="0" RefId="2" Address="65536" Size="32768" Attributes="0"/>
+			<Segment Area="1" RefId="3" Address="0" Size="32768" Attributes="2"/>
+			<Segment Area="0" RefId="4" Address="98304" Size="2097152" Attributes="1"/>
+		</Segments>
+	</SymbolTargetSettings>
+</CoDeSysSymbolTable>

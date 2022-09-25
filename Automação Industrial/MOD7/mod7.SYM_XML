@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<CoDeSysSymbolTable>
+	<SymbolHeader>
+		<Version>-1</Version>
+		<ProjectId>1396615</ProjectId>
+		<WorkbenchVersion>2.3.9.62</WorkbenchVersion>
+		<CompilerVersion>2.3.9.62</CompilerVersion>
+	</SymbolHeader>
+	<SymbolTypeList>
+		<TypeSimple TypeId="0" Size="1">BOOL</TypeSimple>
+		<TypeSimple TypeId="1" Size="2">INT</TypeSimple>
+	</SymbolTypeList>
+	<SymbolVarList>
+		<Var Type="0" Flags="33554496" Access="98" RefId="4" Offset="208">.Auto</Var>
+		<Var Type="0" Flags="33554496" Access="98" RefId="4" Offset="220">.BracoO</Var>
+		<Var Type="0" Flags="33554496" Access="98" RefId="4" Offset="218">.cond</Var>
+		<Var Type="1" Flags="33554496" Access="98" RefId="4" Offset="236">.Cont</Var>
+		<Var Type="0" Flags="33554496" Access="98" RefId="4" Offset="217">.EMG</Var>
+		<Var Type="0" Flags="33554496" Access="98" RefId="4" Offset="221">.Emit</Var>
+		<Var Type="0" Flags="33554496" Access="98" RefId="4" Offset="216">.Estado</Var>
+		<Var Type="0" Flags="33554496" Access="98" RefId="4" Offset="200">.EsteiraE</Var>
+		<Var Type="0" Flags="33554496" Access="98" RefId="4" Offset="201">.EsteiraS</Var>
+		<Var Type="0" Flags="33554496" Access="98" RefId="4" Offset="207">.ItemDetect</Var>
+		<Var Type="0" Flags="33554496" Access="98" RefId="4" Offset="209">.Manual</Var>
+		<Var Type="0" Flags="33554496" Access="98" RefId="4" Offset="223">.MovingX</Var>
+		<Var Type="0" Flags="33554496" Access="98" RefId="4" Offset="224">.MovingZ</Var>
+		<Var Type="0" Flags="33554496" Access="98" RefId="4" Offset="206">.MovX</Var>
+		<Var Type="0" Flags="33554496" Access="98" RefId="4" Offset="222">.Movz</Var>
+		<Var Type="0" Flags="33554496" Access="98" RefId="4" Offset="202">.PeP</Var>
+		<Var Type="0" Flags="33554496" Access="98" RefId="4" Offset="212">.Reset</Var>
+		<Var Type="0" Flags="33554496" Access="98" RefId="4" Offset="215">.ResLed</Var>
+		<Var Type="0" Flags="33554496" Access="98" RefId="4" Offset="203">.SensE</Var>
+		<Var Type="0" Flags="33554496" Access="98" RefId="4" Offset="204">.SensS</Var>
+		<Var Type="0" Flags="33554496" Access="98" RefId="4" Offset="210">.Start</Var>
+		<Var Type="0" Flags="33554496" Access="98" RefId="4" Offset="213">.StartLed</Var>
+		<Var Type="0" Flags="33554496" Access="98" RefId="4" Offset="211">.Stop</Var>
+		<Var Type="0" Flags="33554496" Access="98" RefId="4" Offset="214">.StopLed</Var>
+	</SymbolVarList>
+	<SymbolTaskList/>
+	<SymbolTargetSettings>
+		<MaxNumberOfPOUs>512</MaxNumberOfPOUs>
+		<Segments>
+			<Segment Area="0" RefId="0" Address="0" Size="32768" Attributes="0"/>
+			<Segment Area="0" RefId="1" Address="32768" Size="32768" Attributes="0"/>
+			<Segment Area="0" RefId="2" Address="65536" Size="32768" Attributes="0"/>
+			<Segment Area="1" RefId="3" Address="0" Size="32768" Attributes="2"/>
+			<Segment Area="0" RefId="4" Address="98304" Size="2097152" Attributes="1"/>
+		</Segments>
+	</SymbolTargetSettings>
+</CoDeSysSymbolTable>

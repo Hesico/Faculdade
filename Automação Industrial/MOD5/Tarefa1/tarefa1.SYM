@@ -1,0 +1,6 @@
+;Version=2
+;ProjectId=282220
+;Checksum=0
+;Filesize=0
+.entrada:REAL:4:232:4:b:16#02000040
+.saida:REAL:4:236:4:b:16#02000040
