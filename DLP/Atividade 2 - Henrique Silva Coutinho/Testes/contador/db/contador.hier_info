@@ -1,0 +1,11 @@
+|contador
+clk => h[0].CLK
+clk => h[1].CLK
+clr_n => h.OUTPUTSELECT
+clr_n => h.OUTPUTSELECT
+en => h.OUTPUTSELECT
+en => h.OUTPUTSELECT
+Q[0] <= h[0].DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= h[1].DB_MAX_OUTPUT_PORT_TYPE
+
+

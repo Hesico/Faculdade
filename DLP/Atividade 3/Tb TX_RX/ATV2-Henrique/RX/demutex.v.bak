@@ -1,0 +1,6 @@
+module demutex(
+					input data
+					output OA, OB, OC, OD
+					);
+					
+endmodule

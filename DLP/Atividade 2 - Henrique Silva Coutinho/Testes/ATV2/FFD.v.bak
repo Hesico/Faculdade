@@ -1,0 +1,18 @@
+module FFD(
+				input clr_n, clk, D,
+				output reg FF1
+			  );
+
+always @ (posedge clk or negedge clr_n)
+begin
+	if(~clr_n)
+		FF1 <= 1'd0;
+	else
+	begin
+		FF1 <= D;
+	end
+
+end
+
+
+endmodule

@@ -1,0 +1,888 @@
+$comment
+	File created using the following command:
+		vcd file ATV2.msim.vcd -direction
+$end
+$date
+	Fri Dec 17 12:20:42 2021
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module ATV2_vlg_vec_tst $end
+$var reg 4 ! A [3:0] $end
+$var reg 4 " B [3:0] $end
+$var reg 4 # C [3:0] $end
+$var reg 4 $ D [3:0] $end
+$var reg 1 % clk $end
+$var reg 1 & ld_A $end
+$var reg 1 ' ld_B $end
+$var reg 1 ( ld_C $end
+$var reg 1 ) ld_D $end
+$var reg 1 * transmit $end
+$var wire 1 + TC $end
+$var wire 1 , send $end
+$var wire 1 - transmit_data $end
+
+$scope module i1 $end
+$var wire 1 . gnd $end
+$var wire 1 / vcc $end
+$var wire 1 0 unknown $end
+$var tri1 1 1 devclrn $end
+$var tri1 1 2 devpor $end
+$var tri1 1 3 devoe $end
+$var wire 1 4 transmit_data~output_o $end
+$var wire 1 5 TC~output_o $end
+$var wire 1 6 send~output_o $end
+$var wire 1 7 clk~input_o $end
+$var wire 1 8 C[0]~input_o $end
+$var wire 1 9 C[1]~input_o $end
+$var wire 1 : C[2]~input_o $end
+$var wire 1 ; C[3]~input_o $end
+$var wire 1 < ld_C~input_o $end
+$var wire 1 = regC|Aux~4_combout $end
+$var wire 1 > transmit~input_o $end
+$var wire 1 ? wordcontador|Q~2_combout $end
+$var wire 1 @ bitcontador|Q~0_combout $end
+$var wire 1 A bitcontador|Q~1_combout $end
+$var wire 1 B wordcontador|Q[1]~1_combout $end
+$var wire 1 C wordcontador|Q~0_combout $end
+$var wire 1 D wordcontador|Equal0~0_combout $end
+$var wire 1 E FFJK2|Qp~0_combout $end
+$var wire 1 F FFJK2|Qp~q $end
+$var wire 1 G FFD1|Q~q $end
+$var wire 1 H regC|Aux[0]~1_combout $end
+$var wire 1 I regC|Aux~3_combout $end
+$var wire 1 J regC|Aux~2_combout $end
+$var wire 1 K regC|Aux~0_combout $end
+$var wire 1 L B[0]~input_o $end
+$var wire 1 M B[1]~input_o $end
+$var wire 1 N B[2]~input_o $end
+$var wire 1 O B[3]~input_o $end
+$var wire 1 P ld_B~input_o $end
+$var wire 1 Q regB|Aux~4_combout $end
+$var wire 1 R regB|Aux[0]~1_combout $end
+$var wire 1 S regB|Aux~3_combout $end
+$var wire 1 T regB|Aux~2_combout $end
+$var wire 1 U regB|Aux~0_combout $end
+$var wire 1 V A[0]~input_o $end
+$var wire 1 W A[1]~input_o $end
+$var wire 1 X A[2]~input_o $end
+$var wire 1 Y A[3]~input_o $end
+$var wire 1 Z ld_A~input_o $end
+$var wire 1 [ regA|Aux~4_combout $end
+$var wire 1 \ regA|Aux[0]~1_combout $end
+$var wire 1 ] regA|Aux~3_combout $end
+$var wire 1 ^ regA|Aux~2_combout $end
+$var wire 1 _ regA|Aux~0_combout $end
+$var wire 1 ` mut|Mux0~0_combout $end
+$var wire 1 a D[0]~input_o $end
+$var wire 1 b D[1]~input_o $end
+$var wire 1 c D[2]~input_o $end
+$var wire 1 d D[3]~input_o $end
+$var wire 1 e ld_D~input_o $end
+$var wire 1 f regD|Aux~4_combout $end
+$var wire 1 g regD|Aux[0]~1_combout $end
+$var wire 1 h regD|Aux~3_combout $end
+$var wire 1 i regD|Aux~2_combout $end
+$var wire 1 j regD|Aux~0_combout $end
+$var wire 1 k mut|Mux0~1_combout $end
+$var wire 1 l regC|Aux [3] $end
+$var wire 1 m regC|Aux [2] $end
+$var wire 1 n regC|Aux [1] $end
+$var wire 1 o regC|Aux [0] $end
+$var wire 1 p wordcontador|Q [1] $end
+$var wire 1 q wordcontador|Q [0] $end
+$var wire 1 r regB|Aux [3] $end
+$var wire 1 s regB|Aux [2] $end
+$var wire 1 t regB|Aux [1] $end
+$var wire 1 u regB|Aux [0] $end
+$var wire 1 v regA|Aux [3] $end
+$var wire 1 w regA|Aux [2] $end
+$var wire 1 x regA|Aux [1] $end
+$var wire 1 y regA|Aux [0] $end
+$var wire 1 z regD|Aux [3] $end
+$var wire 1 { regD|Aux [2] $end
+$var wire 1 | regD|Aux [1] $end
+$var wire 1 } regD|Aux [0] $end
+$var wire 1 ~ bitcontador|Q [1] $end
+$var wire 1 !! bitcontador|Q [0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b1 !
+b1001 "
+b1111 #
+b1110 $
+0%
+0&
+0'
+0(
+0)
+0*
+0+
+0,
+0-
+0.
+1/
+x0
+11
+12
+13
+04
+05
+06
+07
+18
+19
+1:
+1;
+0<
+0=
+0>
+0?
+0@
+0A
+1B
+0C
+0D
+1E
+0F
+0G
+0H
+0I
+0J
+0K
+1L
+0M
+0N
+1O
+0P
+0Q
+0R
+0S
+0T
+0U
+1V
+0W
+0X
+0Y
+0Z
+0[
+0\
+0]
+0^
+0_
+0`
+0a
+1b
+1c
+1d
+0e
+0f
+0g
+0h
+0i
+0j
+0k
+0o
+0n
+0m
+0l
+0q
+0p
+0u
+0t
+0s
+0r
+0y
+0x
+0w
+0v
+0}
+0|
+0{
+0z
+0!!
+0~
+$end
+#10000
+1%
+17
+1F
+16
+0B
+1,
+1?
+#20000
+0%
+07
+#30000
+1%
+17
+#40000
+0%
+07
+#50000
+1%
+17
+#60000
+1&
+1'
+1(
+1)
+0%
+1Z
+1P
+1<
+1e
+07
+1\
+1R
+1H
+1g
+1_
+1U
+1Q
+1K
+1J
+1I
+1=
+1i
+1h
+1f
+#70000
+1%
+17
+1|
+1{
+1z
+1y
+1u
+1r
+1o
+1n
+1m
+1l
+1`
+1k
+14
+1-
+#80000
+0%
+07
+#90000
+1%
+17
+#100000
+0%
+07
+#110000
+1%
+17
+#120000
+0%
+07
+#130000
+0&
+0'
+0(
+0)
+1%
+0Z
+0P
+0<
+0e
+17
+0\
+0R
+0H
+0g
+0_
+1[
+0U
+1S
+1j
+0f
+#140000
+0%
+07
+#150000
+1%
+17
+#160000
+0%
+07
+#170000
+1*
+1%
+1>
+17
+1G
+1g
+1\
+1R
+1H
+1@
+#180000
+0%
+07
+#190000
+1%
+17
+1}
+0z
+0y
+1v
+0u
+1s
+1!!
+0`
+1f
+0h
+0[
+1]
+0Q
+1T
+1A
+0@
+0k
+04
+0-
+#200000
+0*
+0%
+0>
+07
+#210000
+1%
+17
+0{
+1z
+1w
+0v
+1t
+0r
+1~
+0!!
+0i
+1h
+1^
+0]
+1U
+0S
+1@
+#220000
+0%
+07
+#230000
+1%
+17
+0|
+1{
+1x
+0w
+1u
+0s
+1!!
+1B
+0j
+1i
+1_
+0^
+1Q
+0T
+0A
+0@
+#240000
+0%
+07
+#250000
+1%
+17
+0}
+1|
+1y
+0x
+0t
+1r
+1q
+0~
+0!!
+1`
+0B
+0f
+1j
+1[
+0_
+0U
+1S
+1C
+0?
+1@
+1k
+14
+1-
+#260000
+0%
+07
+#270000
+1%
+17
+1}
+0z
+0y
+1v
+0u
+1s
+1!!
+0`
+1f
+0h
+0[
+1]
+0Q
+1T
+1A
+0@
+0k
+04
+0-
+#280000
+0%
+07
+#290000
+1%
+17
+0{
+1z
+1w
+0v
+1t
+0r
+1~
+0!!
+0i
+1h
+1^
+0]
+1U
+0S
+1@
+#300000
+0%
+07
+#310000
+1%
+17
+0|
+1{
+1x
+0w
+1u
+0s
+1!!
+1`
+1B
+0j
+1i
+1_
+0^
+1Q
+0T
+0A
+0@
+1k
+14
+1-
+#320000
+0%
+07
+#330000
+1%
+17
+0}
+1|
+1y
+0x
+0t
+1r
+1p
+0q
+0~
+0!!
+0`
+0B
+0k
+0f
+1j
+1[
+0_
+0U
+1S
+1?
+1@
+04
+0-
+1k
+14
+1-
+#340000
+0%
+07
+#350000
+1%
+17
+1}
+0z
+0y
+1v
+0u
+1s
+1!!
+1f
+0h
+0[
+1]
+0Q
+1T
+1A
+0@
+#360000
+0%
+07
+#370000
+1%
+17
+0{
+1z
+1w
+0v
+1t
+0r
+1~
+0!!
+0i
+1h
+1^
+0]
+1U
+0S
+1@
+#380000
+0%
+07
+#390000
+1%
+17
+0|
+1{
+1x
+0w
+1u
+0s
+1!!
+1B
+0j
+1i
+1_
+0^
+1Q
+0T
+0A
+0@
+#400000
+0%
+07
+#410000
+1%
+17
+0}
+1|
+1y
+0x
+0t
+1r
+1q
+0~
+0!!
+1`
+0B
+0f
+1j
+1[
+0_
+0U
+1S
+1D
+0C
+0?
+1@
+15
+1+
+0k
+04
+0-
+#420000
+0%
+07
+#430000
+1%
+17
+1}
+0z
+0y
+1v
+0u
+1s
+1!!
+1k
+1f
+0h
+0[
+1]
+0Q
+1T
+1A
+0@
+14
+1-
+#440000
+0%
+07
+#450000
+1%
+17
+0{
+1z
+1w
+0v
+1t
+0r
+1~
+0!!
+0i
+1h
+1^
+0]
+1U
+0S
+1@
+#460000
+0%
+07
+#470000
+1%
+17
+0|
+1{
+1x
+0w
+1u
+0s
+1!!
+1B
+0j
+1i
+1_
+0^
+1Q
+0T
+0E
+0A
+0@
+#480000
+0%
+07
+#490000
+1%
+17
+0}
+1|
+1y
+0x
+0t
+1r
+0p
+0q
+0~
+0!!
+0F
+06
+0,
+0f
+1j
+1[
+0_
+0U
+1S
+0D
+1E
+05
+0+
+0G
+0g
+0\
+0R
+0H
+#500000
+0%
+07
+#510000
+1%
+17
+1F
+16
+0B
+1,
+1?
+#520000
+0%
+07
+#530000
+1%
+17
+#540000
+0%
+07
+#550000
+1%
+17
+#560000
+0%
+07
+#570000
+1%
+17
+#580000
+0%
+07
+#590000
+1%
+17
+#600000
+0%
+07
+#610000
+1%
+17
+#620000
+0%
+07
+#630000
+1%
+17
+#640000
+0%
+07
+#650000
+1%
+17
+#660000
+0%
+07
+#670000
+1%
+17
+#680000
+0%
+07
+#690000
+1%
+17
+#700000
+0%
+07
+#710000
+1%
+17
+#720000
+0%
+07
+#730000
+1%
+17
+#740000
+0%
+07
+#750000
+1%
+17
+#760000
+0%
+07
+#770000
+1%
+17
+#780000
+0%
+07
+#790000
+1%
+17
+#800000
+0%
+07
+#810000
+1%
+17
+#820000
+0%
+07
+#830000
+1%
+17
+#840000
+0%
+07
+#850000
+1%
+17
+#860000
+0%
+07
+#870000
+1%
+17
+#880000
+0%
+07
+#890000
+1%
+17
+#900000
+0%
+07
+#910000
+1%
+17
+#920000
+0%
+07
+#930000
+1%
+17
+#940000
+0%
+07
+#950000
+1%
+17
+#960000
+0%
+07
+#970000
+1%
+17
+#980000
+0%
+07
+#990000
+1%
+17
+#1000000

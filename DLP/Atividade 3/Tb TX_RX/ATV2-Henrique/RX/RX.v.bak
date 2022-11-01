@@ -1,0 +1,22 @@
+module RX(
+				input clk,
+				input transmit_data,
+				input transmit,
+				input OP,
+				output recev
+			);
+			
+wire OA,OB,OC,OD;
+
+demutex demut(
+					.data(transmit_data),
+					.SEL(OP),
+					.O1(OA),
+					.O2(OB),
+					.O3(OC),
+					.O4(OD)
+					);
+			
+			
+			
+endmodule

@@ -1,0 +1,260 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Henrique/Desktop/Tb TX_RX/simulation/modelsim
+vcontador
+Z1 !s110 1641328296
+!i10b 1
+!s100 ERi2RQHmc2@lM>Ml2I]Q^3
+Iidh^CnZF_Wahg8c5Z0gjF2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1639752949
+8C:/Users/Henrique/Desktop/Tb TX_RX/ATV2-Henrique/RX/contador.v
+FC:/Users/Henrique/Desktop/Tb TX_RX/ATV2-Henrique/RX/contador.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1641328296.000000
+!s107 C:/Users/Henrique/Desktop/Tb TX_RX/ATV2-Henrique/RX/contador.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Henrique/Desktop/Tb TX_RX/ATV2-Henrique/RX|C:/Users/Henrique/Desktop/Tb TX_RX/ATV2-Henrique/RX/contador.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work {+incdir+C:/Users/Henrique/Desktop/Tb TX_RX/ATV2-Henrique/RX}
+Z7 tCvgOpt 0
+vdemutex
+R1
+!i10b 1
+!s100 miAHZ?KSL;m4DWNS?LaMD1
+IRWHdh6D89LJNGSFY@5m>X1
+R2
+R0
+w1639758240
+8C:/Users/Henrique/Desktop/Tb TX_RX/ATV2-Henrique/RX/demutex.v
+FC:/Users/Henrique/Desktop/Tb TX_RX/ATV2-Henrique/RX/demutex.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Henrique/Desktop/Tb TX_RX/ATV2-Henrique/RX/demutex.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Henrique/Desktop/Tb TX_RX/ATV2-Henrique/RX|C:/Users/Henrique/Desktop/Tb TX_RX/ATV2-Henrique/RX/demutex.v|
+!i113 1
+R5
+R6
+R7
+vFFD
+R1
+!i10b 1
+!s100 gD;hZmJ@JTnMjTh9m0@4[1
+IdSS[TXKU09o<lc@0X[8VS2
+R2
+R0
+w1639750362
+8C:/Users/Henrique/Desktop/Tb TX_RX/ATV2-Henrique/RX/FFD.v
+FC:/Users/Henrique/Desktop/Tb TX_RX/ATV2-Henrique/RX/FFD.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Henrique/Desktop/Tb TX_RX/ATV2-Henrique/RX/FFD.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Henrique/Desktop/Tb TX_RX/ATV2-Henrique/RX|C:/Users/Henrique/Desktop/Tb TX_RX/ATV2-Henrique/RX/FFD.v|
+!i113 1
+R5
+R6
+R7
+n@f@f@d
+vFFJK
+R1
+!i10b 1
+!s100 8H_i3e>HekN`[zMP8Q8K@1
+Iz3ToM3=<`>fFF0Rb43al31
+R2
+R0
+w1639753093
+8C:/Users/Henrique/Desktop/Tb TX_RX/ATV2-Henrique/RX/FFJK.v
+FC:/Users/Henrique/Desktop/Tb TX_RX/ATV2-Henrique/RX/FFJK.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Henrique/Desktop/Tb TX_RX/ATV2-Henrique/RX/FFJK.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Henrique/Desktop/Tb TX_RX/ATV2-Henrique/RX|C:/Users/Henrique/Desktop/Tb TX_RX/ATV2-Henrique/RX/FFJK.v|
+!i113 1
+R5
+R6
+R7
+n@f@f@j@k
+vmutex
+Z8 !s110 1641328297
+!i10b 1
+!s100 TXH^CGNL7b_U`N<5LHIaW1
+I6kFgKBBDIY]fGQEEfb:WJ0
+R2
+R0
+w1639753383
+8C:/Users/Henrique/Desktop/Tb TX_RX/ATV2-Henrique/TX/mutex.v
+FC:/Users/Henrique/Desktop/Tb TX_RX/ATV2-Henrique/TX/mutex.v
+L0 1
+R3
+r1
+!s85 0
+31
+Z9 !s108 1641328297.000000
+!s107 C:/Users/Henrique/Desktop/Tb TX_RX/ATV2-Henrique/TX/mutex.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Henrique/Desktop/Tb TX_RX/ATV2-Henrique/TX|C:/Users/Henrique/Desktop/Tb TX_RX/ATV2-Henrique/TX/mutex.v|
+!i113 1
+R5
+Z10 !s92 -vlog01compat -work work {+incdir+C:/Users/Henrique/Desktop/Tb TX_RX/ATV2-Henrique/TX}
+R7
+vRegParSer
+R8
+!i10b 1
+!s100 noj8D_0WNnHjHz`3H3EaW1
+I240n@d@<Ceo1LN9RY;g5`1
+R2
+R0
+w1639750004
+8C:/Users/Henrique/Desktop/Tb TX_RX/ATV2-Henrique/TX/RegParSer.v
+FC:/Users/Henrique/Desktop/Tb TX_RX/ATV2-Henrique/TX/RegParSer.v
+L0 1
+R3
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/Henrique/Desktop/Tb TX_RX/ATV2-Henrique/TX/RegParSer.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Henrique/Desktop/Tb TX_RX/ATV2-Henrique/TX|C:/Users/Henrique/Desktop/Tb TX_RX/ATV2-Henrique/TX/RegParSer.v|
+!i113 1
+R5
+R10
+R7
+n@reg@par@ser
+vRX
+R1
+!i10b 1
+!s100 f8H4>cfWfz8LWdem[@1Xf0
+IzFbh3CNGh10[h06BEiCD30
+R2
+R0
+w1639760924
+8C:/Users/Henrique/Desktop/Tb TX_RX/ATV2-Henrique/RX/RX.v
+FC:/Users/Henrique/Desktop/Tb TX_RX/ATV2-Henrique/RX/RX.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Henrique/Desktop/Tb TX_RX/ATV2-Henrique/RX/RX.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Henrique/Desktop/Tb TX_RX/ATV2-Henrique/RX|C:/Users/Henrique/Desktop/Tb TX_RX/ATV2-Henrique/RX/RX.v|
+!i113 1
+R5
+R6
+R7
+n@r@x
+vRX_TX_tb
+R8
+!i10b 1
+!s100 kGbN7bOL0Son<I?R<A2IS0
+I;2fdMoRDn1zM@J572KQ9b0
+R2
+R0
+w1641328282
+8C:/Users/Henrique/Desktop/Tb TX_RX/RX_TX_tb.v
+FC:/Users/Henrique/Desktop/Tb TX_RX/RX_TX_tb.v
+L0 3
+R3
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/Henrique/Desktop/Tb TX_RX/RX_TX_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Henrique/Desktop/Tb TX_RX|C:/Users/Henrique/Desktop/Tb TX_RX/RX_TX_tb.v|
+!i113 1
+R5
+!s92 -vlog01compat -work work {+incdir+C:/Users/Henrique/Desktop/Tb TX_RX}
+R7
+n@r@x_@t@x_tb
+vSIPO
+R1
+!i10b 1
+!s100 7>EQL__j6?FigNQAz<O<e0
+IgF6P3n6Ji=3zTG7^^iMGX3
+R2
+R0
+w1639758688
+8C:/Users/Henrique/Desktop/Tb TX_RX/ATV2-Henrique/RX/SIPO.v
+FC:/Users/Henrique/Desktop/Tb TX_RX/ATV2-Henrique/RX/SIPO.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Henrique/Desktop/Tb TX_RX/ATV2-Henrique/RX/SIPO.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Henrique/Desktop/Tb TX_RX/ATV2-Henrique/RX|C:/Users/Henrique/Desktop/Tb TX_RX/ATV2-Henrique/RX/SIPO.v|
+!i113 1
+R5
+R6
+R7
+n@s@i@p@o
+vTX
+R8
+!i10b 1
+!s100 7HYD8dTUe^3e=LS5jI=bO3
+IRM2ha7begmc`dL8H2f0^91
+R2
+R0
+w1639761375
+8C:/Users/Henrique/Desktop/Tb TX_RX/ATV2-Henrique/TX/TX.v
+FC:/Users/Henrique/Desktop/Tb TX_RX/ATV2-Henrique/TX/TX.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Henrique/Desktop/Tb TX_RX/ATV2-Henrique/TX/TX.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Henrique/Desktop/Tb TX_RX/ATV2-Henrique/TX|C:/Users/Henrique/Desktop/Tb TX_RX/ATV2-Henrique/TX/TX.v|
+!i113 1
+R5
+R10
+R7
+n@t@x
+vTX_RX
+R8
+!i10b 1
+!s100 fQ3VYQ^]XX_`N9U:><j<G1
+Iz1^]k9BfUK59Gc9`[9RzB3
+R2
+R0
+w1639761510
+8C:/Users/Henrique/Desktop/Tb TX_RX/ATV2-Henrique/TX_RX/TX_RX.v
+FC:/Users/Henrique/Desktop/Tb TX_RX/ATV2-Henrique/TX_RX/TX_RX.v
+L0 1
+R3
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/Henrique/Desktop/Tb TX_RX/ATV2-Henrique/TX_RX/TX_RX.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Henrique/Desktop/Tb TX_RX/ATV2-Henrique/TX_RX|C:/Users/Henrique/Desktop/Tb TX_RX/ATV2-Henrique/TX_RX/TX_RX.v|
+!i113 1
+R5
+!s92 -vlog01compat -work work {+incdir+C:/Users/Henrique/Desktop/Tb TX_RX/ATV2-Henrique/TX_RX}
+R7
+n@t@x_@r@x

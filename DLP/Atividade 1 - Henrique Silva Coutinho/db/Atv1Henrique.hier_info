@@ -1,0 +1,139 @@
+|atv1
+A[0] => A[0].IN3
+A[1] => A[1].IN3
+A[2] => A[2].IN3
+A[3] => A[3].IN3
+B[0] => B[0].IN3
+B[1] => B[1].IN3
+B[2] => B[2].IN3
+B[3] => B[3].IN3
+op[0] => op[0].IN2
+op[1] => op[1].IN1
+S[0] <= myMUX4bits:seletor.out
+S[1] <= myMUX4bits:seletor.out
+S[2] <= myMUX4bits:seletor.out
+S[3] <= myMUX4bits:seletor.out
+
+
+|atv1|add_sub:soma
+M => M.IN1
+A[0] => A[0].IN1
+A[1] => A[1].IN1
+A[2] => A[2].IN1
+A[3] => A[3].IN1
+B[0] => xor0.IN0
+B[1] => xor1.IN0
+B[2] => xor2.IN0
+B[3] => xor3.IN0
+S[0] <= full_adder:FA0.S
+S[1] <= full_adder:FA1.S
+S[2] <= full_adder:FA2.S
+S[3] <= full_adder:FA3.S
+Ov <= xorOV.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|atv1|add_sub:soma|full_adder:FA0
+A => u0.IN0
+A => u3.IN0
+B => u0.IN1
+B => u3.IN1
+Cin => u1.IN1
+Cin => u2.IN1
+S <= u1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= u4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|atv1|add_sub:soma|full_adder:FA1
+A => u0.IN0
+A => u3.IN0
+B => u0.IN1
+B => u3.IN1
+Cin => u1.IN1
+Cin => u2.IN1
+S <= u1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= u4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|atv1|add_sub:soma|full_adder:FA2
+A => u0.IN0
+A => u3.IN0
+B => u0.IN1
+B => u3.IN1
+Cin => u1.IN1
+Cin => u2.IN1
+S <= u1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= u4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|atv1|add_sub:soma|full_adder:FA3
+A => u0.IN0
+A => u3.IN0
+B => u0.IN1
+B => u3.IN1
+Cin => u1.IN1
+Cin => u2.IN1
+S <= u1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= u4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|atv1|e:AeB
+A[0] => and0.IN0
+A[1] => and1.IN0
+A[2] => and2.IN0
+A[3] => and3.IN0
+B[0] => and0.IN1
+B[1] => and1.IN1
+B[2] => and2.IN1
+B[3] => and3.IN1
+eAB[0] <= and0.DB_MAX_OUTPUT_PORT_TYPE
+eAB[1] <= and1.DB_MAX_OUTPUT_PORT_TYPE
+eAB[2] <= and2.DB_MAX_OUTPUT_PORT_TYPE
+eAB[3] <= and3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|atv1|ou:AouB
+A[0] => or0.IN0
+A[1] => or1.IN0
+A[2] => or2.IN0
+A[3] => or3.IN0
+B[0] => or0.IN1
+B[1] => or1.IN1
+B[2] => or2.IN1
+B[3] => or3.IN1
+ouAB[0] <= or0.DB_MAX_OUTPUT_PORT_TYPE
+ouAB[1] <= or1.DB_MAX_OUTPUT_PORT_TYPE
+ouAB[2] <= or2.DB_MAX_OUTPUT_PORT_TYPE
+ouAB[3] <= or3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|atv1|myMUX4bits:seletor
+SEL[0] => Mux0.IN1
+SEL[0] => Mux1.IN1
+SEL[0] => Mux2.IN1
+SEL[0] => Mux3.IN1
+SEL[1] => Mux0.IN0
+SEL[1] => Mux1.IN0
+SEL[1] => Mux2.IN0
+SEL[1] => Mux3.IN0
+In1[0] => Mux3.IN2
+In1[1] => Mux2.IN2
+In1[2] => Mux1.IN2
+In1[3] => Mux0.IN2
+In2[0] => Mux3.IN3
+In2[1] => Mux2.IN3
+In2[2] => Mux1.IN3
+In2[3] => Mux0.IN3
+In3[0] => Mux3.IN4
+In3[1] => Mux2.IN4
+In3[2] => Mux1.IN4
+In3[3] => Mux0.IN4
+In4[0] => Mux3.IN5
+In4[1] => Mux2.IN5
+In4[2] => Mux1.IN5
+In4[3] => Mux0.IN5
+out[0] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+

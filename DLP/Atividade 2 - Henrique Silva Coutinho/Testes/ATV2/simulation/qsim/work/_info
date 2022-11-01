@@ -1,0 +1,54 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Henrique/Desktop/ATV2/simulation/qsim
+vATVHenrique
+!s110 1639695615
+!i10b 1
+!s100 cP6n[Jn5ILXUULSONjjEC1
+I87N^CJ?2e5hB8Hg5fLgkb0
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1639695614
+8ATVHenrique.vo
+FATVHenrique.vo
+L0 31
+Z2 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1639695615.000000
+!s107 ATVHenrique.vo|
+!s90 -work|work|ATVHenrique.vo|
+!i113 1
+Z3 o-work work
+Z4 tCvgOpt 0
+n@a@t@v@henrique
+vATVHenrique_vlg_vec_tst
+!s110 1639695616
+!i10b 1
+!s100 [67kgORc3jU?F<Zk;a^V]2
+I^9glBPG:3>fN=_9FnAWGA2
+R1
+R0
+w1639695613
+8Waveform3.vwf.vt
+FWaveform3.vwf.vt
+L0 29
+R2
+r1
+!s85 0
+31
+!s108 1639695616.000000
+!s107 Waveform3.vwf.vt|
+!s90 -work|work|Waveform3.vwf.vt|
+!i113 1
+R3
+R4
+n@a@t@v@henrique_vlg_vec_tst

@@ -1,0 +1,28 @@
+module RegParSer(
+				input [3:0] In,
+				input clk, En, load,
+				output reg Out
+			  );
+
+reg [3:0] Aux;	
+ 
+always @ (posedge clk)
+
+begin
+	if(load)
+		Aux <= In;
+	else
+		begin
+		if(En)
+		begin
+			Aux[0] <= Aux[1];
+			Aux[1] <= Aux[2];
+			Aux[2] <= Aux[3];
+			Aux[3] <= Aux[0];
+			Out = Aux[0];
+		end
+	end
+end
+
+
+endmodule

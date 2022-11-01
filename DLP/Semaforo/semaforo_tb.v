@@ -1,0 +1,26 @@
+`timescale 1ns/1ps
+module semaforo_tb();
+reg clk;
+wire [1:0] c1, c2;
+wire p1, p2;
+
+initial 
+begin 
+	clk = 1'b0;
+	forever
+	begin 
+		#10 clk = ~clk;
+	end
+end
+
+
+
+semaforo DUT(
+				 .clk(clk),
+				 .c1(c1),
+				 .c2(c2),
+				 .p1(p1),
+				 .p2(p2)
+			    );
+			  
+endmodule

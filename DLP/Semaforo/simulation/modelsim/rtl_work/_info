@@ -1,0 +1,54 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Henrique/Desktop/Semaforo/simulation/modelsim
+vsemaforo
+Z1 !s110 1642796522
+!i10b 1
+!s100 _SIf?k@iJ`F7mBFhFeb0Q1
+IfjJ7E9ROb@AD_2CMI46`22
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1642795388
+8C:/Users/Henrique/Desktop/Semaforo/semaforo.v
+FC:/Users/Henrique/Desktop/Semaforo/semaforo.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1642796522.000000
+!s107 C:/Users/Henrique/Desktop/Semaforo/semaforo.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Henrique/Desktop/Semaforo|C:/Users/Henrique/Desktop/Semaforo/semaforo.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+C:/Users/Henrique/Desktop/Semaforo
+Z7 tCvgOpt 0
+vsemaforo_tb
+R1
+!i10b 1
+!s100 dPf4H1[=<V]39mD40k5`H0
+I79d4gIG_OOTeXXLOR`ded2
+R2
+R0
+w1642794314
+8C:/Users/Henrique/Desktop/Semaforo/semaforo_tb.v
+FC:/Users/Henrique/Desktop/Semaforo/semaforo_tb.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Henrique/Desktop/Semaforo/semaforo_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Henrique/Desktop/Semaforo|C:/Users/Henrique/Desktop/Semaforo/semaforo_tb.v|
+!i113 1
+R5
+R6
+R7

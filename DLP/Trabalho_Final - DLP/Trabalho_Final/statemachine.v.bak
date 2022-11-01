@@ -1,0 +1,41 @@
+module statemachine
+(
+  input clk, in, rst,
+  output smOut
+);
+
+  // Declare state cont
+	reg cont;
+	reg state;
+  // Declare states
+	parameter S0=0, S1=1;
+
+  // Determine the next state
+  always @ (posedge clk or posedge rst) // Transição dos Estados
+    begin
+      if(rst==1)
+        begin
+          state <= S0;
+          cont <= 0;
+        end
+      else
+
+        case(state)
+          S0: state <= in ? S1 : S2;
+          S1: state <= S0;
+
+        endcase
+    end
+
+  // Output depends only on the state
+  always @ (state) //Decodificação das Saídas
+    begin
+      case(state)
+        S0: smOut <= 1'd0;
+
+        S1: smOut <= 1'd1;
+
+      endcase
+    end
+
+endmodule
