@@ -1,0 +1,144 @@
+|RX
+clk => clk.IN7
+transmit_data => transmit_data.IN1
+transmit => transmit.IN1
+recevA[0] <= SIPO:regA.Out
+recevA[1] <= SIPO:regA.Out
+recevA[2] <= SIPO:regA.Out
+recevA[3] <= SIPO:regA.Out
+recevB[0] <= SIPO:regB.Out
+recevB[1] <= SIPO:regB.Out
+recevB[2] <= SIPO:regB.Out
+recevB[3] <= SIPO:regB.Out
+recevC[0] <= SIPO:regC.Out
+recevC[1] <= SIPO:regC.Out
+recevC[2] <= SIPO:regC.Out
+recevC[3] <= SIPO:regC.Out
+recevD[0] <= SIPO:regD.Out
+recevD[1] <= SIPO:regD.Out
+recevD[2] <= SIPO:regD.Out
+recevD[3] <= SIPO:regD.Out
+received <= received.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RX|SIPO:regA
+entrada => Out[3]~reg0.DATAIN
+clk => Out[0]~reg0.CLK
+clk => Out[1]~reg0.CLK
+clk => Out[2]~reg0.CLK
+clk => Out[3]~reg0.CLK
+enable => Out[0]~reg0.ENA
+enable => Out[1]~reg0.ENA
+enable => Out[2]~reg0.ENA
+enable => Out[3]~reg0.ENA
+Out[0] <= Out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Out[1] <= Out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Out[2] <= Out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Out[3] <= Out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RX|SIPO:regB
+entrada => Out[3]~reg0.DATAIN
+clk => Out[0]~reg0.CLK
+clk => Out[1]~reg0.CLK
+clk => Out[2]~reg0.CLK
+clk => Out[3]~reg0.CLK
+enable => Out[0]~reg0.ENA
+enable => Out[1]~reg0.ENA
+enable => Out[2]~reg0.ENA
+enable => Out[3]~reg0.ENA
+Out[0] <= Out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Out[1] <= Out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Out[2] <= Out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Out[3] <= Out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RX|SIPO:regC
+entrada => Out[3]~reg0.DATAIN
+clk => Out[0]~reg0.CLK
+clk => Out[1]~reg0.CLK
+clk => Out[2]~reg0.CLK
+clk => Out[3]~reg0.CLK
+enable => Out[0]~reg0.ENA
+enable => Out[1]~reg0.ENA
+enable => Out[2]~reg0.ENA
+enable => Out[3]~reg0.ENA
+Out[0] <= Out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Out[1] <= Out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Out[2] <= Out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Out[3] <= Out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RX|SIPO:regD
+entrada => Out[3]~reg0.DATAIN
+clk => Out[0]~reg0.CLK
+clk => Out[1]~reg0.CLK
+clk => Out[2]~reg0.CLK
+clk => Out[3]~reg0.CLK
+enable => Out[0]~reg0.ENA
+enable => Out[1]~reg0.ENA
+enable => Out[2]~reg0.ENA
+enable => Out[3]~reg0.ENA
+Out[0] <= Out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Out[1] <= Out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Out[2] <= Out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Out[3] <= Out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RX|demutex:demut
+data => O.DATAB
+data => O.DATAB
+data => O.DATAB
+data => O.DATAB
+SEL[0] => Equal0.IN63
+SEL[0] => Equal1.IN63
+SEL[0] => Equal2.IN63
+SEL[0] => Equal3.IN63
+SEL[1] => Equal0.IN62
+SEL[1] => Equal1.IN62
+SEL[1] => Equal2.IN62
+SEL[1] => Equal3.IN62
+Out[0] <= O.DB_MAX_OUTPUT_PORT_TYPE
+Out[1] <= O.DB_MAX_OUTPUT_PORT_TYPE
+Out[2] <= O.DB_MAX_OUTPUT_PORT_TYPE
+Out[3] <= O.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RX|FFD:FFD1
+clr_n => Q.ACLR
+clk => Q.CLK
+D => Q.DATAIN
+FF1 <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RX|contador:bitcontador
+clk => Q[0]~reg0.CLK
+clk => Q[1]~reg0.CLK
+clr_n => Q.OUTPUTSELECT
+clr_n => Q.OUTPUTSELECT
+en => Q.OUTPUTSELECT
+en => Q.OUTPUTSELECT
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+TC <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RX|contador:wordcontador
+clk => Q[0]~reg0.CLK
+clk => Q[1]~reg0.CLK
+clr_n => Q.OUTPUTSELECT
+clr_n => Q.OUTPUTSELECT
+en => Q.OUTPUTSELECT
+en => Q.OUTPUTSELECT
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+TC <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RX|FFJK:FFJK2
+J => ~NO_FANOUT~
+K => Qp.DATAB
+clk => Qp.CLK
+FF2 <= Qp.DB_MAX_OUTPUT_PORT_TYPE
+
+

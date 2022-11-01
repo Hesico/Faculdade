@@ -1,0 +1,193 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "received_n",
+					"strict" : false
+				},
+				{
+					"name" : "sent_n",
+					"strict" : false
+				},
+				{
+					"name" : "rom_addr[0]",
+					"strict" : false
+				},
+				{
+					"name" : "rom_addr[1]",
+					"strict" : false
+				},
+				{
+					"name" : "rom_addr[2]",
+					"strict" : false
+				},
+				{
+					"name" : "rom_addr[3]",
+					"strict" : false
+				},
+				{
+					"name" : "rom_data[0]",
+					"strict" : false
+				},
+				{
+					"name" : "rom_data[1]",
+					"strict" : false
+				},
+				{
+					"name" : "rom_data[2]",
+					"strict" : false
+				},
+				{
+					"name" : "rom_data[3]",
+					"strict" : false
+				},
+				{
+					"name" : "rom_data[4]",
+					"strict" : false
+				},
+				{
+					"name" : "rom_data[5]",
+					"strict" : false
+				},
+				{
+					"name" : "rom_data[6]",
+					"strict" : false
+				},
+				{
+					"name" : "rom_data[7]",
+					"strict" : false
+				},
+				{
+					"name" : "ram_addr[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ram_addr[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ram_addr[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ram_addr[3]",
+					"strict" : false
+				},
+				{
+					"name" : "ram_data[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ram_data[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ram_data[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ram_data[3]",
+					"strict" : false
+				},
+				{
+					"name" : "ram_data[4]",
+					"strict" : false
+				},
+				{
+					"name" : "ram_data[5]",
+					"strict" : false
+				},
+				{
+					"name" : "ram_data[6]",
+					"strict" : false
+				},
+				{
+					"name" : "ram_data[7]",
+					"strict" : false
+				},
+				{
+					"name" : "received_data[0]",
+					"strict" : false
+				},
+				{
+					"name" : "received_data[1]",
+					"strict" : false
+				},
+				{
+					"name" : "received_data[2]",
+					"strict" : false
+				},
+				{
+					"name" : "received_data[3]",
+					"strict" : false
+				},
+				{
+					"name" : "received_data[4]",
+					"strict" : false
+				},
+				{
+					"name" : "received_data[5]",
+					"strict" : false
+				},
+				{
+					"name" : "received_data[6]",
+					"strict" : false
+				},
+				{
+					"name" : "received_data[7]",
+					"strict" : false
+				},
+				{
+					"name" : "transmit",
+					"strict" : false
+				},
+				{
+					"name" : "tc_bit",
+					"strict" : false
+				},
+				{
+					"name" : "transmit_data",
+					"strict" : false
+				},
+				{
+					"name" : "Q[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Q[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Q[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Q[3]",
+					"strict" : false
+				},
+				{
+					"name" : "shift_enable",
+					"strict" : false
+				},
+				{
+					"name" : "write_enable",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "clr_n",
+					"strict" : false
+				},
+				{
+					"name" : "rst",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

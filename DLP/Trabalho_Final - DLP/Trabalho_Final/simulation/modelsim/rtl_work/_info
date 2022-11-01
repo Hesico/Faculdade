@@ -1,0 +1,280 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/simulation/modelsim
+vcounter
+Z1 !s110 1645646080
+!i10b 1
+!s100 aSd7]4N:1AanCgM:DPdIg0
+I9g`XPCh65Z;VTVN0Qm2P01
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1645645368
+8C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/counter.v
+FC:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/counter.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1645646079.000000
+!s107 C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/counter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final|C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/counter.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final
+Z7 tCvgOpt 0
+vD_FF
+Z8 !s110 1645646079
+!i10b 1
+!s100 g76[=oD]KI^ngP7Q5US4Y0
+I>E4zf`bU4<l;[Q6W9@YP73
+R2
+R0
+w1645582722
+8C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/D_FF.v
+FC:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/D_FF.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/D_FF.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final|C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/D_FF.v|
+!i113 1
+R5
+R6
+R7
+n@d_@f@f
+vdevice
+R8
+!i10b 1
+!s100 :1be2K6nKO]EeO9AkWeE[0
+I=OSUnn5C7VjPi>dLl0<2o2
+R2
+R0
+w1645645680
+8C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/device.v
+FC:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/device.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/device.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final|C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/device.v|
+!i113 1
+R5
+R6
+R7
+vdevice_tb
+R1
+!i10b 1
+!s100 _RzfmklU;ML9i`4iVH@6@2
+ImeLbmV^CPZ:z3Th0?49Wf3
+R2
+R0
+w1645646036
+8C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/device_tb.v
+FC:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/device_tb.v
+L0 3
+R3
+r1
+!s85 0
+31
+Z9 !s108 1645646080.000000
+!s107 C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/device_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final|C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/device_tb.v|
+!i113 1
+R5
+R6
+R7
+vJK_FF
+R8
+!i10b 1
+!s100 G8]Xl[aR0a_g0QYgie3;`2
+IPn?>IkNBfaj7I5hj@JSWz1
+R2
+R0
+w1645552010
+8C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/JK_FF.v
+FC:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/JK_FF.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/JK_FF.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final|C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/JK_FF.v|
+!i113 1
+R5
+R6
+R7
+n@j@k_@f@f
+vPISO_register
+R8
+!i10b 1
+!s100 ndA5dacdhFDo8ai;]8QHN0
+I9Zl1ADeaDFo?h^YSc`W<b2
+R2
+R0
+Z10 w1645461698
+8C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/PISO_register.v
+FC:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/PISO_register.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/PISO_register.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final|C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/PISO_register.v|
+!i113 1
+R5
+R6
+R7
+n@p@i@s@o_register
+vram_mem
+R8
+!i10b 1
+!s100 2gHUL;CVnP5=@R>Q9a_cG2
+IhAc:nmA[Xb_1m6WCbCf=60
+R2
+R0
+w1645644901
+8C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/ram_mem.v
+FC:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/ram_mem.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/ram_mem.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final|C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/ram_mem.v|
+!i113 1
+R5
+R6
+R7
+vrom_mem
+R1
+!i10b 1
+!s100 P2FHzkLkD@0z;=_LVdTA90
+I?^C7E53ka2`diP[_YWOT11
+R2
+R0
+R10
+8C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/rom_mem.v
+FC:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/rom_mem.v
+L0 1
+R3
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/rom_mem.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final|C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/rom_mem.v|
+!i113 1
+R5
+R6
+R7
+vRX
+R8
+!i10b 1
+!s100 m]R^[XBN^C@<TKRGRQz;@3
+IJL5=3o`XBmlo[1I@MEa2U0
+R2
+R0
+w1645554548
+8C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/RX.v
+FC:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/RX.v
+L0 1
+R3
+r1
+!s85 0
+31
+Z11 !s108 1645646078.000000
+!s107 C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/RX.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final|C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/RX.v|
+!i113 1
+R5
+R6
+R7
+n@r@x
+vSIPO_register
+Z12 !s110 1645646078
+!i10b 1
+!s100 T[bA2deEB;JB56ElS7i;81
+ILMzS>^hBgmE6ckKn>^QKX0
+R2
+R0
+R10
+8C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/SIPO_register.v
+FC:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/SIPO_register.v
+L0 1
+R3
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/SIPO_register.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final|C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/SIPO_register.v|
+!i113 1
+R5
+R6
+R7
+n@s@i@p@o_register
+vstatemachine
+R12
+!i10b 1
+!s100 HGkDFW3^TffHd[n1gId2H1
+I=c7j6Mnh9PRS>9R1[]c7`0
+R2
+R0
+w1645580406
+8C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/statemachine.v
+FC:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/statemachine.v
+L0 1
+R3
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/statemachine.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final|C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/statemachine.v|
+!i113 1
+R5
+R6
+R7
+vTX
+R12
+!i10b 1
+!s100 2a@?5d^IlFZ`TTVPAFbFO0
+I3]72kJ]F8ClKKEPhBfNzO3
+R2
+R0
+w1645585209
+8C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/TX.v
+FC:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/TX.v
+L0 1
+R3
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/TX.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final|C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/TX.v|
+!i113 1
+R5
+R6
+R7
+n@t@x

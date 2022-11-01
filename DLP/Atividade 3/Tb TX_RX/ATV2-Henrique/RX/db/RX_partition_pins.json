@@ -1,0 +1,89 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "recevA[0]",
+					"strict" : false
+				},
+				{
+					"name" : "recevA[1]",
+					"strict" : false
+				},
+				{
+					"name" : "recevA[2]",
+					"strict" : false
+				},
+				{
+					"name" : "recevA[3]",
+					"strict" : false
+				},
+				{
+					"name" : "recevB[0]",
+					"strict" : false
+				},
+				{
+					"name" : "recevB[1]",
+					"strict" : false
+				},
+				{
+					"name" : "recevB[2]",
+					"strict" : false
+				},
+				{
+					"name" : "recevB[3]",
+					"strict" : false
+				},
+				{
+					"name" : "recevC[0]",
+					"strict" : false
+				},
+				{
+					"name" : "recevC[1]",
+					"strict" : false
+				},
+				{
+					"name" : "recevC[2]",
+					"strict" : false
+				},
+				{
+					"name" : "recevC[3]",
+					"strict" : false
+				},
+				{
+					"name" : "recevD[0]",
+					"strict" : false
+				},
+				{
+					"name" : "recevD[1]",
+					"strict" : false
+				},
+				{
+					"name" : "recevD[2]",
+					"strict" : false
+				},
+				{
+					"name" : "recevD[3]",
+					"strict" : false
+				},
+				{
+					"name" : "received",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "transmit_data",
+					"strict" : false
+				},
+				{
+					"name" : "transmit",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

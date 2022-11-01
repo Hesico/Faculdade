@@ -1,0 +1,15 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/Henrique/Desktop/contador/contador.v
+source_file = 1, C:/Users/Henrique/Desktop/contador/Waveform.vwf
+source_file = 1, C:/Users/Henrique/Desktop/contador/db/contador.cbx.xml
+design_name = contador
+instance = comp, \Q[0]~output , Q[0]~output, contador, 1
+instance = comp, \Q[1]~output , Q[1]~output, contador, 1
+instance = comp, \clk~input , clk~input, contador, 1
+instance = comp, \clr_n~input , clr_n~input, contador, 1
+instance = comp, \h~0 , h~0, contador, 1
+instance = comp, \en~input , en~input, contador, 1
+instance = comp, \h[0]~1 , h[0]~1, contador, 1
+instance = comp, \h[0] , h[0], contador, 1
+instance = comp, \h~2 , h~2, contador, 1
+instance = comp, \h[1] , h[1], contador, 1

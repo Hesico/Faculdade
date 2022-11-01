@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Fri Jan 21 17:21:49 2022
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : semaforo
+Top-level Entity Name : semaforo
+Family : Cyclone IV E
+Total logic elements : 13
+    Total combinational functions : 13
+    Dedicated logic registers : 8
+Total registers : 8
+Total pins : 7
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

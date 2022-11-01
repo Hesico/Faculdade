@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at contador.v(13): always construct contains both blocking and non-blocking assignments File: C:/Users/Henrique/Desktop/contador/contador.v Line: 13

@@ -1,0 +1,493 @@
+|device
+clk => clk.IN8
+clr_n => clr_n.IN2
+rst => rst.IN3
+received_n << RX:receiver.received_n
+sent_n << TX:transmitter.sent_n
+rom_addr[0] << rom_addr[0].DB_MAX_OUTPUT_PORT_TYPE
+rom_addr[1] << rom_addr[1].DB_MAX_OUTPUT_PORT_TYPE
+rom_addr[2] << rom_addr[2].DB_MAX_OUTPUT_PORT_TYPE
+rom_addr[3] << rom_addr[3].DB_MAX_OUTPUT_PORT_TYPE
+rom_data[0] << rom_data[0].DB_MAX_OUTPUT_PORT_TYPE
+rom_data[1] << rom_data[1].DB_MAX_OUTPUT_PORT_TYPE
+rom_data[2] << rom_data[2].DB_MAX_OUTPUT_PORT_TYPE
+rom_data[3] << rom_data[3].DB_MAX_OUTPUT_PORT_TYPE
+rom_data[4] << rom_data[4].DB_MAX_OUTPUT_PORT_TYPE
+rom_data[5] << rom_data[5].DB_MAX_OUTPUT_PORT_TYPE
+rom_data[6] << rom_data[6].DB_MAX_OUTPUT_PORT_TYPE
+rom_data[7] << rom_data[7].DB_MAX_OUTPUT_PORT_TYPE
+ram_addr[0] << ram_addr[0].DB_MAX_OUTPUT_PORT_TYPE
+ram_addr[1] << ram_addr[1].DB_MAX_OUTPUT_PORT_TYPE
+ram_addr[2] << ram_addr[2].DB_MAX_OUTPUT_PORT_TYPE
+ram_addr[3] << ram_addr[3].DB_MAX_OUTPUT_PORT_TYPE
+ram_data[0] << ram_mem:ram.q
+ram_data[1] << ram_mem:ram.q
+ram_data[2] << ram_mem:ram.q
+ram_data[3] << ram_mem:ram.q
+ram_data[4] << ram_mem:ram.q
+ram_data[5] << ram_mem:ram.q
+ram_data[6] << ram_mem:ram.q
+ram_data[7] << ram_mem:ram.q
+received_data[0] << RX:receiver.received_data
+received_data[1] << RX:receiver.received_data
+received_data[2] << RX:receiver.received_data
+received_data[3] << RX:receiver.received_data
+received_data[4] << RX:receiver.received_data
+received_data[5] << RX:receiver.received_data
+received_data[6] << RX:receiver.received_data
+received_data[7] << RX:receiver.received_data
+transmit << transmit.DB_MAX_OUTPUT_PORT_TYPE
+tc_bit << TX:transmitter.tc_bit
+transmit_data << transmit_data.DB_MAX_OUTPUT_PORT_TYPE
+Q[0] << TX:transmitter.Q
+Q[1] << TX:transmitter.Q
+Q[2] << TX:transmitter.Q
+Q[3] << TX:transmitter.Q
+shift_enable << TX:transmitter.shift_enable
+write_enable << write_enable.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|device|TX:transmitter
+rst => comb.IN0
+rst => comb.IN0
+clk => clk.IN3
+transmit => comb.IN1
+data_in[0] => data_in[0].IN1
+data_in[1] => data_in[1].IN1
+data_in[2] => data_in[2].IN1
+data_in[3] => data_in[3].IN1
+data_in[4] => data_in[4].IN1
+data_in[5] => data_in[5].IN1
+data_in[6] => data_in[6].IN1
+data_in[7] => data_in[7].IN1
+transmit_data <= PISO_register:register.out
+sent_n <= sent_n.DB_MAX_OUTPUT_PORT_TYPE
+tc_bit <= tc_bit.DB_MAX_OUTPUT_PORT_TYPE
+Q[0] <= counter:bit_counter.Q
+Q[1] <= counter:bit_counter.Q
+Q[2] <= counter:bit_counter.Q
+Q[3] <= counter:bit_counter.Q
+Q[4] <= counter:bit_counter.Q
+Q[5] <= counter:bit_counter.Q
+Q[6] <= counter:bit_counter.Q
+Q[7] <= counter:bit_counter.Q
+shift_enable <= shift_enable.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|device|TX:transmitter|counter:bit_counter
+clk => Q[0]~reg0.CLK
+clk => Q[1]~reg0.CLK
+clk => Q[2]~reg0.CLK
+clk => Q[3]~reg0.CLK
+en => Q[0]~reg0.ENA
+en => Q[3]~reg0.ENA
+en => Q[2]~reg0.ENA
+en => Q[1]~reg0.ENA
+clr_n => Q[0]~reg0.ACLR
+clr_n => Q[1]~reg0.ACLR
+clr_n => Q[2]~reg0.ACLR
+clr_n => Q[3]~reg0.ACLR
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+tc <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|device|TX:transmitter|PISO_register:register
+clk => piso_reg[0].CLK
+clk => piso_reg[1].CLK
+clk => piso_reg[2].CLK
+clk => piso_reg[3].CLK
+clk => piso_reg[4].CLK
+clk => piso_reg[5].CLK
+clk => piso_reg[6].CLK
+clk => piso_reg[7].CLK
+clr_n => piso_reg[0].ACLR
+clr_n => piso_reg[1].ACLR
+clr_n => piso_reg[2].ACLR
+clr_n => piso_reg[3].ACLR
+clr_n => piso_reg[4].ACLR
+clr_n => piso_reg[5].ACLR
+clr_n => piso_reg[6].ACLR
+clr_n => piso_reg[7].ACLR
+load => piso_reg.OUTPUTSELECT
+load => piso_reg.OUTPUTSELECT
+load => piso_reg.OUTPUTSELECT
+load => piso_reg.OUTPUTSELECT
+load => piso_reg.OUTPUTSELECT
+load => piso_reg.OUTPUTSELECT
+load => piso_reg.OUTPUTSELECT
+load => piso_reg.OUTPUTSELECT
+shift_enable => piso_reg.OUTPUTSELECT
+shift_enable => piso_reg.OUTPUTSELECT
+shift_enable => piso_reg.OUTPUTSELECT
+shift_enable => piso_reg.OUTPUTSELECT
+shift_enable => piso_reg.OUTPUTSELECT
+shift_enable => piso_reg.OUTPUTSELECT
+shift_enable => piso_reg.OUTPUTSELECT
+shift_enable => piso_reg.OUTPUTSELECT
+input_data[0] => piso_reg.DATAB
+input_data[1] => piso_reg.DATAB
+input_data[2] => piso_reg.DATAB
+input_data[3] => piso_reg.DATAB
+input_data[4] => piso_reg.DATAB
+input_data[5] => piso_reg.DATAB
+input_data[6] => piso_reg.DATAB
+input_data[7] => piso_reg.DATAB
+out <= piso_reg[0].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|device|TX:transmitter|D_FF:FF1
+clk => q~reg0.CLK
+clr_n => q~reg0.ACLR
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|device|TX:transmitter|JK_FF:FF2
+clk => Qp.CLK
+j => ~NO_FANOUT~
+k => Qp.DATAB
+clr_n => ~NO_FANOUT~
+q <= Qp.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|device|counter:rom_counter
+clk => Q[0]~reg0.CLK
+clk => Q[1]~reg0.CLK
+clk => Q[2]~reg0.CLK
+clk => Q[3]~reg0.CLK
+clk => Q[4]~reg0.CLK
+clk => Q[5]~reg0.CLK
+clk => Q[6]~reg0.CLK
+clk => Q[7]~reg0.CLK
+clk => Q[8]~reg0.CLK
+clk => Q[9]~reg0.CLK
+clk => Q[10]~reg0.CLK
+clk => Q[11]~reg0.CLK
+clk => Q[12]~reg0.CLK
+clk => Q[13]~reg0.CLK
+clk => Q[14]~reg0.CLK
+clk => Q[15]~reg0.CLK
+en => Q[0]~reg0.ENA
+en => Q[15]~reg0.ENA
+en => Q[14]~reg0.ENA
+en => Q[13]~reg0.ENA
+en => Q[12]~reg0.ENA
+en => Q[11]~reg0.ENA
+en => Q[10]~reg0.ENA
+en => Q[9]~reg0.ENA
+en => Q[8]~reg0.ENA
+en => Q[7]~reg0.ENA
+en => Q[6]~reg0.ENA
+en => Q[5]~reg0.ENA
+en => Q[4]~reg0.ENA
+en => Q[3]~reg0.ENA
+en => Q[2]~reg0.ENA
+en => Q[1]~reg0.ENA
+clr_n => Q[0]~reg0.ACLR
+clr_n => Q[1]~reg0.ACLR
+clr_n => Q[2]~reg0.ACLR
+clr_n => Q[3]~reg0.ACLR
+clr_n => Q[4]~reg0.ACLR
+clr_n => Q[5]~reg0.ACLR
+clr_n => Q[6]~reg0.ACLR
+clr_n => Q[7]~reg0.ACLR
+clr_n => Q[8]~reg0.ACLR
+clr_n => Q[9]~reg0.ACLR
+clr_n => Q[10]~reg0.ACLR
+clr_n => Q[11]~reg0.ACLR
+clr_n => Q[12]~reg0.ACLR
+clr_n => Q[13]~reg0.ACLR
+clr_n => Q[14]~reg0.ACLR
+clr_n => Q[15]~reg0.ACLR
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= Q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= Q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= Q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= Q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[8] <= Q[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[9] <= Q[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[10] <= Q[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[11] <= Q[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[12] <= Q[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[13] <= Q[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[14] <= Q[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[15] <= Q[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+tc <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|device|rom_mem:rom
+clk => q[0]~reg0.CLK
+clk => q[1]~reg0.CLK
+clk => q[2]~reg0.CLK
+clk => q[3]~reg0.CLK
+clk => q[4]~reg0.CLK
+clk => q[5]~reg0.CLK
+clk => q[6]~reg0.CLK
+clk => q[7]~reg0.CLK
+addr[0] => rom.RADDR
+addr[1] => rom.RADDR1
+addr[2] => rom.RADDR2
+addr[3] => rom.RADDR3
+q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[5] <= q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[6] <= q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[7] <= q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|device|RX:receiver
+clk => clk.IN3
+transmit => transmit.IN1
+transmit_data => transmit_data.IN1
+received_n <= received_n.DB_MAX_OUTPUT_PORT_TYPE
+received_data[0] <= SIPO_register:register.out
+received_data[1] <= SIPO_register:register.out
+received_data[2] <= SIPO_register:register.out
+received_data[3] <= SIPO_register:register.out
+received_data[4] <= SIPO_register:register.out
+received_data[5] <= SIPO_register:register.out
+received_data[6] <= SIPO_register:register.out
+received_data[7] <= SIPO_register:register.out
+
+
+|device|RX:receiver|counter:cnt
+clk => Q[0]~reg0.CLK
+clk => Q[1]~reg0.CLK
+clk => Q[2]~reg0.CLK
+clk => Q[3]~reg0.CLK
+clk => Q[4]~reg0.CLK
+clk => Q[5]~reg0.CLK
+clk => Q[6]~reg0.CLK
+clk => Q[7]~reg0.CLK
+en => Q[0]~reg0.ENA
+en => Q[7]~reg0.ENA
+en => Q[6]~reg0.ENA
+en => Q[5]~reg0.ENA
+en => Q[4]~reg0.ENA
+en => Q[3]~reg0.ENA
+en => Q[2]~reg0.ENA
+en => Q[1]~reg0.ENA
+clr_n => Q[0]~reg0.ACLR
+clr_n => Q[1]~reg0.ACLR
+clr_n => Q[2]~reg0.ACLR
+clr_n => Q[3]~reg0.ACLR
+clr_n => Q[4]~reg0.ACLR
+clr_n => Q[5]~reg0.ACLR
+clr_n => Q[6]~reg0.ACLR
+clr_n => Q[7]~reg0.ACLR
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= Q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= Q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= Q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= Q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+tc <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|device|RX:receiver|SIPO_register:register
+clk => out[0]~reg0.CLK
+clk => out[1]~reg0.CLK
+clk => out[2]~reg0.CLK
+clk => out[3]~reg0.CLK
+clk => out[4]~reg0.CLK
+clk => out[5]~reg0.CLK
+clk => out[6]~reg0.CLK
+clk => out[7]~reg0.CLK
+clr_n => out[0]~reg0.ACLR
+clr_n => out[1]~reg0.ACLR
+clr_n => out[2]~reg0.ACLR
+clr_n => out[3]~reg0.ACLR
+clr_n => out[4]~reg0.ACLR
+clr_n => out[5]~reg0.ACLR
+clr_n => out[6]~reg0.ACLR
+clr_n => out[7]~reg0.ACLR
+shift_enable => out[0]~reg0.ENA
+shift_enable => out[7]~reg0.ENA
+shift_enable => out[6]~reg0.ENA
+shift_enable => out[5]~reg0.ENA
+shift_enable => out[4]~reg0.ENA
+shift_enable => out[3]~reg0.ENA
+shift_enable => out[2]~reg0.ENA
+shift_enable => out[1]~reg0.ENA
+input_data => out[7]~reg0.DATAIN
+out[0] <= out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out[4] <= out[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out[5] <= out[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out[6] <= out[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out[7] <= out[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|device|RX:receiver|D_FF:FF1
+clk => q~reg0.CLK
+clr_n => q~reg0.ACLR
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|device|RX:receiver|JK_FF:FF2
+clk => Qp.CLK
+j => ~NO_FANOUT~
+k => Qp.DATAB
+clr_n => ~NO_FANOUT~
+q <= Qp.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|device|ram_mem:ram
+clk => ram.we_a.CLK
+clk => ram.waddr_a[3].CLK
+clk => ram.waddr_a[2].CLK
+clk => ram.waddr_a[1].CLK
+clk => ram.waddr_a[0].CLK
+clk => ram.data_a[7].CLK
+clk => ram.data_a[6].CLK
+clk => ram.data_a[5].CLK
+clk => ram.data_a[4].CLK
+clk => ram.data_a[3].CLK
+clk => ram.data_a[2].CLK
+clk => ram.data_a[1].CLK
+clk => ram.data_a[0].CLK
+clk => addr_reg[0].CLK
+clk => addr_reg[1].CLK
+clk => addr_reg[2].CLK
+clk => addr_reg[3].CLK
+clk => ram.CLK0
+we => ram.we_a.DATAIN
+we => ram.WE
+data[0] => ram.data_a[0].DATAIN
+data[0] => ram.DATAIN
+data[1] => ram.data_a[1].DATAIN
+data[1] => ram.DATAIN1
+data[2] => ram.data_a[2].DATAIN
+data[2] => ram.DATAIN2
+data[3] => ram.data_a[3].DATAIN
+data[3] => ram.DATAIN3
+data[4] => ram.data_a[4].DATAIN
+data[4] => ram.DATAIN4
+data[5] => ram.data_a[5].DATAIN
+data[5] => ram.DATAIN5
+data[6] => ram.data_a[6].DATAIN
+data[6] => ram.DATAIN6
+data[7] => ram.data_a[7].DATAIN
+data[7] => ram.DATAIN7
+addr[0] => ram.waddr_a[0].DATAIN
+addr[0] => addr_reg[0].DATAIN
+addr[0] => ram.WADDR
+addr[1] => ram.waddr_a[1].DATAIN
+addr[1] => addr_reg[1].DATAIN
+addr[1] => ram.WADDR1
+addr[2] => ram.waddr_a[2].DATAIN
+addr[2] => addr_reg[2].DATAIN
+addr[2] => ram.WADDR2
+addr[3] => ram.waddr_a[3].DATAIN
+addr[3] => addr_reg[3].DATAIN
+addr[3] => ram.WADDR3
+q[0] <= ram.DATAOUT
+q[1] <= ram.DATAOUT1
+q[2] <= ram.DATAOUT2
+q[3] <= ram.DATAOUT3
+q[4] <= ram.DATAOUT4
+q[5] <= ram.DATAOUT5
+q[6] <= ram.DATAOUT6
+q[7] <= ram.DATAOUT7
+
+
+|device|counter:ram_counter
+clk => Q[0]~reg0.CLK
+clk => Q[1]~reg0.CLK
+clk => Q[2]~reg0.CLK
+clk => Q[3]~reg0.CLK
+clk => Q[4]~reg0.CLK
+clk => Q[5]~reg0.CLK
+clk => Q[6]~reg0.CLK
+clk => Q[7]~reg0.CLK
+clk => Q[8]~reg0.CLK
+clk => Q[9]~reg0.CLK
+clk => Q[10]~reg0.CLK
+clk => Q[11]~reg0.CLK
+clk => Q[12]~reg0.CLK
+clk => Q[13]~reg0.CLK
+clk => Q[14]~reg0.CLK
+clk => Q[15]~reg0.CLK
+en => Q[0]~reg0.ENA
+en => Q[15]~reg0.ENA
+en => Q[14]~reg0.ENA
+en => Q[13]~reg0.ENA
+en => Q[12]~reg0.ENA
+en => Q[11]~reg0.ENA
+en => Q[10]~reg0.ENA
+en => Q[9]~reg0.ENA
+en => Q[8]~reg0.ENA
+en => Q[7]~reg0.ENA
+en => Q[6]~reg0.ENA
+en => Q[5]~reg0.ENA
+en => Q[4]~reg0.ENA
+en => Q[3]~reg0.ENA
+en => Q[2]~reg0.ENA
+en => Q[1]~reg0.ENA
+clr_n => Q[0]~reg0.ACLR
+clr_n => Q[1]~reg0.ACLR
+clr_n => Q[2]~reg0.ACLR
+clr_n => Q[3]~reg0.ACLR
+clr_n => Q[4]~reg0.ACLR
+clr_n => Q[5]~reg0.ACLR
+clr_n => Q[6]~reg0.ACLR
+clr_n => Q[7]~reg0.ACLR
+clr_n => Q[8]~reg0.ACLR
+clr_n => Q[9]~reg0.ACLR
+clr_n => Q[10]~reg0.ACLR
+clr_n => Q[11]~reg0.ACLR
+clr_n => Q[12]~reg0.ACLR
+clr_n => Q[13]~reg0.ACLR
+clr_n => Q[14]~reg0.ACLR
+clr_n => Q[15]~reg0.ACLR
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= Q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= Q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= Q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= Q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[8] <= Q[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[9] <= Q[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[10] <= Q[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[11] <= Q[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[12] <= Q[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[13] <= Q[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[14] <= Q[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[15] <= Q[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+tc <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|device|statemachine:sm1
+clk => state~2.DATAIN
+in => state.DATAB
+in => state.DATAB
+in => Selector0.IN1
+rst => state~4.DATAIN
+smOut <= smOut.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|device|statemachine:sm2
+clk => state~2.DATAIN
+in => state.DATAB
+in => state.DATAB
+in => Selector0.IN1
+rst => state~4.DATAIN
+smOut <= smOut.DB_MAX_OUTPUT_PORT_TYPE
+
+

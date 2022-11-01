@@ -1,0 +1,68 @@
+|ATVHenrique
+A[0] => A[0].IN1
+A[1] => A[1].IN1
+A[2] => A[2].IN1
+A[3] => A[3].IN1
+B[0] => ~NO_FANOUT~
+B[1] => ~NO_FANOUT~
+B[2] => ~NO_FANOUT~
+B[3] => ~NO_FANOUT~
+C[0] => ~NO_FANOUT~
+C[1] => ~NO_FANOUT~
+C[2] => ~NO_FANOUT~
+C[3] => ~NO_FANOUT~
+D[0] => ~NO_FANOUT~
+D[1] => ~NO_FANOUT~
+D[2] => ~NO_FANOUT~
+D[3] => ~NO_FANOUT~
+ld_A => ld_A.IN1
+ld_B => ~NO_FANOUT~
+ld_C => ~NO_FANOUT~
+ld_D => ~NO_FANOUT~
+clock => clock.IN2
+transmit => transmit.IN1
+clr => clr.IN2
+S << RegParSer:regA.Out
+
+
+|ATVHenrique|RegParSer:regA
+In[0] => Aux.DATAB
+In[1] => Aux.DATAB
+In[2] => Aux.DATAB
+In[3] => Aux.DATAB
+clk => Out~reg0.CLK
+clk => Aux[0].CLK
+clk => Aux[1].CLK
+clk => Aux[2].CLK
+clk => Aux[3].CLK
+En => Aux.OUTPUTSELECT
+En => Aux.OUTPUTSELECT
+En => Aux.OUTPUTSELECT
+En => Aux.OUTPUTSELECT
+En => Out.OUTPUTSELECT
+load => Aux.OUTPUTSELECT
+load => Aux.OUTPUTSELECT
+load => Aux.OUTPUTSELECT
+load => Aux.OUTPUTSELECT
+load => Out~reg0.ENA
+Out <= Out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ATVHenrique|FFD:FF1
+clr_n => FF1~reg0.ACLR
+clk => FF1~reg0.CLK
+D => FF1~reg0.DATAIN
+FF1 <= FF1~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ATVHenrique|Contador:BitC
+clk => TC~reg0.CLK
+clk => Q[0]~reg0.CLK
+clk => Q[1]~reg0.CLK
+EN => ~NO_FANOUT~
+clr_n => Q[0]~reg0.DATAIN
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+TC <= TC~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

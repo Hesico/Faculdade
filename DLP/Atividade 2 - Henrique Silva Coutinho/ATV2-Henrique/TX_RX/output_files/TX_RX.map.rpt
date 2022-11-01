@@ -1,0 +1,444 @@
+Analysis & Synthesis report for TX_RX
+Fri Dec 17 14:18:46 2021
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Registers Removed During Synthesis
+  9. General Register Statistics
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 11. Port Connectivity Checks: "RX:rx|FFJK:FFJK2"
+ 12. Port Connectivity Checks: "RX:rx|contador:bitcontador"
+ 13. Port Connectivity Checks: "RX:rx|FFD:FFD1"
+ 14. Port Connectivity Checks: "TX:tx|FFJK:FFJK2"
+ 15. Port Connectivity Checks: "TX:tx|contador:bitcontador"
+ 16. Port Connectivity Checks: "TX:tx|FFD:FFD1"
+ 17. Port Connectivity Checks: "TX:tx"
+ 18. Post-Synthesis Netlist Statistics for Top Partition
+ 19. Elapsed Time Per Partition
+ 20. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Fri Dec 17 14:18:46 2021       ;
+; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Revision Name                      ; TX_RX                                       ;
+; Top-level Entity Name              ; TX_RX                                       ;
+; Family                             ; Cyclone IV E                                ;
+; Total logic elements               ; 49                                          ;
+;     Total combinational functions  ; 33                                          ;
+;     Dedicated logic registers      ; 38                                          ;
+; Total registers                    ; 38                                          ;
+; Total pins                         ; 39                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
++------------------------------------+---------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                              ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Top-level entity name                                            ; TX_RX              ; TX_RX              ;
+; Family name                                                      ; Cyclone IV E       ; Cyclone V          ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; DSP Block Balancing                                              ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto ROM Replacement                                             ; On                 ; On                 ;
+; Auto RAM Replacement                                             ; On                 ; On                 ;
+; Auto DSP Block Replacement                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Strict RAM Replacement                                           ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto RAM Block Balancing                                         ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                    ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Timing-Driven Synthesis                                          ; On                 ; On                 ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                      ; Off                ; Off                ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; SDC constraint protection                                        ; Off                ; Off                ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                             ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                           ; On                 ; On                 ;
++------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 4           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processors 3-4         ;   0.0%      ;
++----------------------------+-------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                         ;
++----------------------------------+-----------------+------------------------+--------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                           ; Library ;
++----------------------------------+-----------------+------------------------+--------------------------------------------------------+---------+
+; ../RX/SIPO.v                     ; yes             ; User Verilog HDL File  ; C:/Users/Henrique/Desktop/ATV2-Henrique/RX/SIPO.v      ;         ;
+; ../RX/RX.v                       ; yes             ; User Verilog HDL File  ; C:/Users/Henrique/Desktop/ATV2-Henrique/RX/RX.v        ;         ;
+; ../RX/FFJK.v                     ; yes             ; User Verilog HDL File  ; C:/Users/Henrique/Desktop/ATV2-Henrique/RX/FFJK.v      ;         ;
+; ../RX/FFD.v                      ; yes             ; User Verilog HDL File  ; C:/Users/Henrique/Desktop/ATV2-Henrique/RX/FFD.v       ;         ;
+; ../RX/demutex.v                  ; yes             ; User Verilog HDL File  ; C:/Users/Henrique/Desktop/ATV2-Henrique/RX/demutex.v   ;         ;
+; ../RX/contador.v                 ; yes             ; User Verilog HDL File  ; C:/Users/Henrique/Desktop/ATV2-Henrique/RX/contador.v  ;         ;
+; ../TX/TX.v                       ; yes             ; User Verilog HDL File  ; C:/Users/Henrique/Desktop/ATV2-Henrique/TX/TX.v        ;         ;
+; ../TX/RegParSer.v                ; yes             ; User Verilog HDL File  ; C:/Users/Henrique/Desktop/ATV2-Henrique/TX/RegParSer.v ;         ;
+; ../TX/mutex.v                    ; yes             ; User Verilog HDL File  ; C:/Users/Henrique/Desktop/ATV2-Henrique/TX/mutex.v     ;         ;
+; TX_RX.v                          ; yes             ; User Verilog HDL File  ; C:/Users/Henrique/Desktop/ATV2-Henrique/TX_RX/TX_RX.v  ;         ;
++----------------------------------+-----------------+------------------------+--------------------------------------------------------+---------+
+
+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimated Total logic elements              ; 49        ;
+;                                             ;           ;
+; Total combinational functions               ; 33        ;
+; Logic element usage by number of LUT inputs ;           ;
+;     -- 4 input functions                    ; 4         ;
+;     -- 3 input functions                    ; 23        ;
+;     -- <=2 input functions                  ; 6         ;
+;                                             ;           ;
+; Logic elements by mode                      ;           ;
+;     -- normal mode                          ; 33        ;
+;     -- arithmetic mode                      ; 0         ;
+;                                             ;           ;
+; Total registers                             ; 38        ;
+;     -- Dedicated logic registers            ; 38        ;
+;     -- I/O registers                        ; 0         ;
+;                                             ;           ;
+; I/O pins                                    ; 39        ;
+;                                             ;           ;
+; Embedded Multiplier 9-bit elements          ; 0         ;
+;                                             ;           ;
+; Maximum fan-out node                        ; clk~input ;
+; Maximum fan-out                             ; 37        ;
+; Total fan-out                               ; 263       ;
+; Average fan-out                             ; 1.77      ;
++---------------------------------------------+-----------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                        ;
++-------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------+-------------+--------------+
+; Compilation Hierarchy Node    ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                ; Entity Name ; Library Name ;
++-------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------+-------------+--------------+
+; |TX_RX                        ; 33 (0)              ; 38 (0)                    ; 0           ; 0            ; 0       ; 0         ; 39   ; 0            ; |TX_RX                             ; TX_RX       ; work         ;
+;    |RX:rx|                    ; 11 (4)              ; 22 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TX_RX|RX:rx                       ; RX          ; work         ;
+;       |FFD:FFD1|              ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TX_RX|RX:rx|FFD:FFD1              ; FFD         ; work         ;
+;       |FFJK:FFJK2|            ; 2 (2)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TX_RX|RX:rx|FFJK:FFJK2            ; FFJK        ; work         ;
+;       |SIPO:regA|             ; 0 (0)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TX_RX|RX:rx|SIPO:regA             ; SIPO        ; work         ;
+;       |SIPO:regB|             ; 0 (0)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TX_RX|RX:rx|SIPO:regB             ; SIPO        ; work         ;
+;       |SIPO:regC|             ; 0 (0)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TX_RX|RX:rx|SIPO:regC             ; SIPO        ; work         ;
+;       |SIPO:regD|             ; 0 (0)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TX_RX|RX:rx|SIPO:regD             ; SIPO        ; work         ;
+;       |contador:bitcontador|  ; 2 (2)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TX_RX|RX:rx|contador:bitcontador  ; contador    ; work         ;
+;       |contador:wordcontador| ; 3 (3)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TX_RX|RX:rx|contador:wordcontador ; contador    ; work         ;
+;    |TX:tx|                    ; 22 (0)              ; 16 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TX_RX|TX:tx                       ; TX          ; work         ;
+;       |RegParSer:regA|        ; 5 (5)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TX_RX|TX:tx|RegParSer:regA        ; RegParSer   ; work         ;
+;       |RegParSer:regB|        ; 5 (5)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TX_RX|TX:tx|RegParSer:regB        ; RegParSer   ; work         ;
+;       |RegParSer:regC|        ; 5 (5)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TX_RX|TX:tx|RegParSer:regC        ; RegParSer   ; work         ;
+;       |RegParSer:regD|        ; 5 (5)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TX_RX|TX:tx|RegParSer:regD        ; RegParSer   ; work         ;
+;       |mutex:mut|             ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TX_RX|TX:tx|mutex:mut             ; mutex       ; work         ;
++-------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------+-------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++--------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                   ;
++---------------------------------------+----------------------------------------------+
+; Register name                         ; Reason for Removal                           ;
++---------------------------------------+----------------------------------------------+
+; TX:tx|FFJK:FFJK2|Qp                   ; Merged with RX:rx|FFJK:FFJK2|Qp              ;
+; TX:tx|contador:wordcontador|Q[1]      ; Merged with RX:rx|contador:wordcontador|Q[1] ;
+; TX:tx|contador:wordcontador|Q[0]      ; Merged with RX:rx|contador:wordcontador|Q[0] ;
+; TX:tx|FFD:FFD1|Q                      ; Merged with RX:rx|FFD:FFD1|Q                 ;
+; TX:tx|contador:bitcontador|Q[1]       ; Merged with RX:rx|contador:bitcontador|Q[1]  ;
+; TX:tx|contador:bitcontador|Q[0]       ; Merged with RX:rx|contador:bitcontador|Q[0]  ;
+; Total Number of Removed Registers = 6 ;                                              ;
++---------------------------------------+----------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 38    ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 1     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 34    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                        ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output              ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------+
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |TX_RX|TX:tx|RegParSer:regA|Aux[0]      ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |TX_RX|TX:tx|RegParSer:regB|Aux[0]      ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |TX_RX|TX:tx|RegParSer:regC|Aux[0]      ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |TX_RX|TX:tx|RegParSer:regD|Aux[0]      ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |TX_RX|RX:rx|contador:wordcontador|Q[0] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------+
+
+
++----------------------------------------------+
+; Port Connectivity Checks: "RX:rx|FFJK:FFJK2" ;
++------+-------+----------+--------------------+
+; Port ; Type  ; Severity ; Details            ;
++------+-------+----------+--------------------+
+; J    ; Input ; Info     ; Stuck at VCC       ;
++------+-------+----------+--------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "RX:rx|contador:bitcontador"                                                         ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------+
+; Port Connectivity Checks: "RX:rx|FFD:FFD1" ;
++------+-------+----------+------------------+
+; Port ; Type  ; Severity ; Details          ;
++------+-------+----------+------------------+
+; D    ; Input ; Info     ; Stuck at VCC     ;
++------+-------+----------+------------------+
+
+
++----------------------------------------------+
+; Port Connectivity Checks: "TX:tx|FFJK:FFJK2" ;
++------+-------+----------+--------------------+
+; Port ; Type  ; Severity ; Details            ;
++------+-------+----------+--------------------+
+; J    ; Input ; Info     ; Stuck at VCC       ;
++------+-------+----------+--------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "TX:tx|contador:bitcontador"                                                         ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------+
+; Port Connectivity Checks: "TX:tx|FFD:FFD1" ;
++------+-------+----------+------------------+
+; Port ; Type  ; Severity ; Details          ;
++------+-------+----------+------------------+
+; D    ; Input ; Info     ; Stuck at VCC     ;
++------+-------+----------+------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "TX:tx"                                                                              ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; send ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 39                          ;
+; cycloneiii_ff         ; 38                          ;
+;     CLR               ; 1                           ;
+;     ENA               ; 34                          ;
+;     plain             ; 3                           ;
+; cycloneiii_lcell_comb ; 33                          ;
+;     normal            ; 33                          ;
+;         2 data inputs ; 6                           ;
+;         3 data inputs ; 23                          ;
+;         4 data inputs ; 4                           ;
+;                       ;                             ;
+; Max LUT depth         ; 2.00                        ;
+; Average LUT depth     ; 0.91                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+    Info: Processing started: Fri Dec 17 14:18:32 2021
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off TX_RX -c TX_RX
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file /users/henrique/desktop/atv2-henrique/rx/sipo.v
+    Info (12023): Found entity 1: SIPO File: C:/Users/Henrique/Desktop/ATV2-Henrique/RX/SIPO.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/henrique/desktop/atv2-henrique/rx/rx.v
+    Info (12023): Found entity 1: RX File: C:/Users/Henrique/Desktop/ATV2-Henrique/RX/RX.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/henrique/desktop/atv2-henrique/rx/ffjk.v
+    Info (12023): Found entity 1: FFJK File: C:/Users/Henrique/Desktop/ATV2-Henrique/RX/FFJK.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/henrique/desktop/atv2-henrique/rx/ffd.v
+    Info (12023): Found entity 1: FFD File: C:/Users/Henrique/Desktop/ATV2-Henrique/RX/FFD.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/henrique/desktop/atv2-henrique/rx/demutex.v
+    Info (12023): Found entity 1: demutex File: C:/Users/Henrique/Desktop/ATV2-Henrique/RX/demutex.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/henrique/desktop/atv2-henrique/rx/contador.v
+    Info (12023): Found entity 1: contador File: C:/Users/Henrique/Desktop/ATV2-Henrique/RX/contador.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/henrique/desktop/atv2-henrique/tx/tx.v
+    Info (12023): Found entity 1: TX File: C:/Users/Henrique/Desktop/ATV2-Henrique/TX/TX.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/henrique/desktop/atv2-henrique/tx/regparser.v
+    Info (12023): Found entity 1: RegParSer File: C:/Users/Henrique/Desktop/ATV2-Henrique/TX/RegParSer.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/henrique/desktop/atv2-henrique/tx/mutex.v
+    Info (12023): Found entity 1: mutex File: C:/Users/Henrique/Desktop/ATV2-Henrique/TX/mutex.v Line: 1
+Info (15248): File "C:/Users/Henrique/Desktop/ATV2-Henrique/TX/FFJK.v" is a duplicate of already analyzed file "C:/Users/Henrique/Desktop/ATV2-Henrique/RX/FFJK.v" (same filename, same library name and same md5 digest). Skipping analysis of this file.
+Info (12021): Found 0 design units, including 0 entities, in source file /users/henrique/desktop/atv2-henrique/tx/ffjk.v
+Info (15248): File "C:/Users/Henrique/Desktop/ATV2-Henrique/TX/FFD.v" is a duplicate of already analyzed file "C:/Users/Henrique/Desktop/ATV2-Henrique/RX/FFD.v" (same filename, same library name and same md5 digest). Skipping analysis of this file.
+Info (12021): Found 0 design units, including 0 entities, in source file /users/henrique/desktop/atv2-henrique/tx/ffd.v
+Info (15248): File "C:/Users/Henrique/Desktop/ATV2-Henrique/TX/contador.v" is a duplicate of already analyzed file "C:/Users/Henrique/Desktop/ATV2-Henrique/RX/contador.v" (same filename, same library name and same md5 digest). Skipping analysis of this file.
+Info (12021): Found 0 design units, including 0 entities, in source file /users/henrique/desktop/atv2-henrique/tx/contador.v
+Info (12021): Found 1 design units, including 1 entities, in source file tx_rx.v
+    Info (12023): Found entity 1: TX_RX File: C:/Users/Henrique/Desktop/ATV2-Henrique/TX_RX/TX_RX.v Line: 1
+Info (12127): Elaborating entity "TX_RX" for the top level hierarchy
+Info (12128): Elaborating entity "TX" for hierarchy "TX:tx" File: C:/Users/Henrique/Desktop/ATV2-Henrique/TX_RX/TX_RX.v Line: 25
+Info (12128): Elaborating entity "RegParSer" for hierarchy "TX:tx|RegParSer:regA" File: C:/Users/Henrique/Desktop/ATV2-Henrique/TX/TX.v Line: 22
+Info (12128): Elaborating entity "FFD" for hierarchy "TX:tx|FFD:FFD1" File: C:/Users/Henrique/Desktop/ATV2-Henrique/TX/TX.v Line: 54
+Info (12128): Elaborating entity "contador" for hierarchy "TX:tx|contador:bitcontador" File: C:/Users/Henrique/Desktop/ATV2-Henrique/TX/TX.v Line: 64
+Info (12128): Elaborating entity "FFJK" for hierarchy "TX:tx|FFJK:FFJK2" File: C:/Users/Henrique/Desktop/ATV2-Henrique/TX/TX.v Line: 80
+Info (12128): Elaborating entity "mutex" for hierarchy "TX:tx|mutex:mut" File: C:/Users/Henrique/Desktop/ATV2-Henrique/TX/TX.v Line: 89
+Info (12128): Elaborating entity "RX" for hierarchy "RX:rx" File: C:/Users/Henrique/Desktop/ATV2-Henrique/TX_RX/TX_RX.v Line: 36
+Info (12128): Elaborating entity "SIPO" for hierarchy "RX:rx|SIPO:regA" File: C:/Users/Henrique/Desktop/ATV2-Henrique/RX/RX.v Line: 19
+Info (12128): Elaborating entity "demutex" for hierarchy "RX:rx|demutex:demut" File: C:/Users/Henrique/Desktop/ATV2-Henrique/RX/RX.v Line: 44
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 89 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 22 input pins
+    Info (21059): Implemented 17 output pins
+    Info (21061): Implemented 50 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4781 megabytes
+    Info: Processing ended: Fri Dec 17 14:18:46 2021
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:31
+
+

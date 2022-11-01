@@ -1,0 +1,144 @@
+#!/bin/sh
+
+# Determine the OS of this system.  This script is called by several others.
+
+# this script was copied from $SGE_ROOT/mgc/.sbin/grid_osver and is used
+# primarily to determine the Linux distribution on the current host
+
+PATH="$PATH:/usr/sbin"; export PATH
+
+OSVER=`uname -r`
+OSMAN=`uname -s`
+MYVER=""
+PLUGIN="$SGE_ROOT/default/config/local/plugins/grid_osver"
+
+# Define a function to return the OS version
+return_os () {
+	if [ -x "$PLUGIN" ]; then
+		"$PLUGIN" $MYVER
+	else
+		echo "$MYVER"
+	fi
+	exit 0
+}
+
+# HP,Sun,Windows
+case "$OSMAN:$OSVER" in
+	SunOS:*)		  OSVERA=`echo $OSVER | sed -e 's/^.*\.//'`
+				  MYVER="solaris$OSVERA"; return_os;;
+	HP-UX:B.11.00) 		  MYVER="hpux11"; return_os;;
+	HP-UX:B.11.11) 		  MYVER="hpux11i"; return_os;;
+	HP-UX:B.11.22) 		  MYVER="hpux11"; return_os;;
+	AIX:*)			  OSVERA=`uname -v`;
+				  MYVER="aix$OSVERA$OSVER"; return_os;;
+	Interix:*)		  
+		cd $SGE_ROOT/mgc/.sbin
+		MYVER=`cscript.exe //NoLogo ./grid_osver.vbs | tr -d "\012\015"`
+		cache=`$SGE_ROOT/mgc/.sbin/gridcfg EXECD_SPOOL_DIR`/wincache
+		if [ -w $cache/osver ] && [ "$MYVER" != "" ]; then
+			echo "$MYVER" > $cache/osver
+		elif [ -s $cache/osver ]; then
+			MYVER=`cat $cache/osver`
+		fi
+		return_os;;
+esac
+
+
+if [ -s /etc/redhat-release ] ; then
+# RedHat is a little strange, but then again, what else is new.
+# 1st, check to see if this is RedHat.  If not, see if it is fedora or mandrake
+# (and if not, then I have no idea...)
+
+	MYVER=`sed -ne 's/^Red Hat.*Linux.*release *\([0-9.][0-9.]*\).*$/redhat\1/p' /etc/redhat-release`
+
+	if [ -z "$MYVER" ] ; then
+		MYVER=`sed -ne 's/Fedora Core release \([0-9.][0-9.]*\).*$/fedora\1/p' /etc/redhat-release`
+	fi
+	if [ -z "$MYVER" ] ; then
+		MYVER=`sed -ne 's/Mandrake Linux release \([0-9.][0-9.]*\).*$/mandrake\1/p' /etc/redhat-release`
+	fi
+	if [ -z "$MYVER" ] ; then
+		MYVER=`sed -ne 's/Mandriva Linux release \([0-9.][0-9.]*\).*$/mandriva\1/p' /etc/redhat-release`
+	fi
+	if [ -z "$MYVER" ] ; then
+		MYVER=`sed -ne 's/^CentOS release \([0-9.][0-9.]*\).*$/centos\1/p' /etc/redhat-release`
+	fi
+	if [ -z "$MYVER" ] ; then
+		echo "Unknown RedHat Release" >&2
+		MYVER="unknown"
+	fi
+	return_os
+fi
+
+# Pick up SLES 11+, with patchlevel
+SRF="/etc/SuSE-release"
+if [ -s "$SRF" ]; then
+	SUSEV=`grep -i '^suse linux enterprise server' $SRF 2>/dev/null`
+	if [ -n "$SUSEV" ]; then
+		SUSER=`grep -i '^VERSION =' 2>/dev/null $SRF | sed -e s'/VERSION = //'`
+		SUSEP=`grep -i '^PATCHLEVEL =' 2>/dev/null $SRF | sed -e s'/PATCHLEVEL = //'`
+		if [ -n "$SUSER" ] && [ $SUSER -ge 11 ]; then
+			if [ -n "$SUSEP" ] && [ $SUSEP -gt 0 ]; then
+				MYVER="sles${SUSER}u${SUSEP}"
+				return_os
+			else
+				MYVER="sles${SUSER}"
+				return_os
+			fi
+		fi
+	fi
+fi
+
+if [ -s /etc/issue ] ; then
+	# Check for sles first
+	SUSECHECK=`grep -i 'suse sles' /etc/issue 2>/dev/null`
+	if [ -n "$SUSECHECK" ] ; then
+		MYVER=`sed -ne 's/^Welcome to SuSE SLES \([0-9.][0-9.]*\).*$/sles\1/p'  /etc/issue`
+		return_os
+	fi
+
+	# Check for SLED
+	SUSECHECK=`grep -i 'Welcome to SUSE Linux Enterprise Desktop' /etc/issue`
+	if [ -n "$SUSECHECK" ] ; then
+	   MYVER=`sed -ne 's/Welcome to SUSE Linux Enterprise Desktop \([0-9.][0-9.]*\).*$/sled\1/p' /etc/issue`
+	   return_os
+	fi
+	# Check for sles server next
+	SUSECHECK=`grep -i 'suse linux enterprise' /etc/issue 2>/dev/null`
+	if [ -n "$SUSECHECK" ] ; then
+		MYVER=`sed -ne 's/^Welcome to SUSE LINUX Enterprise Server \([0-9.][0-9.]*\).*$/sles\1/ip'  /etc/issue`
+		return_os
+	fi
+
+	# Last, check for other suse release
+	SUSECHECK=`grep -i 'suse linux' /etc/issue 2>/dev/null`
+	if [ -n "$SUSECHECK" ] ; then
+		MYVER=`sed -ne 's/^Welcome to SuSE Linux *\([0-9.][0-9.]*\).*$/suse\1/ip'  /etc/issue`
+		return_os
+	fi
+
+	# Ubuntu, seems to test OK
+	UBUCHECK=`grep -i 'ubuntu' /etc/issue 2>/dev/null`
+	if [ -n "$UBUCHECK" ] ; then
+		MYVER=`sed -ne 's/^Ubuntu *\([0-9.][0-9.]*\).*$/ubuntu\1/ip' /etc/issue`
+		return_os
+	fi
+
+	# Debian, limited testing done
+	DEBCHECK=`grep -i 'debian' /etc/issue 2>/dev/null`
+	if [ -n "$DEBCHECK" ] ; then
+		MYVER=`sed -ne 's/^Debian GNU\/Linux *\([0-9.][0-9.]*\).*$/debian\1/ip' /etc/issue`
+		return_os
+	fi
+
+	# Not likely to see any of these in the wild
+	if [ -s /etc/gentoo-release ] ; then
+		MYVER="gentoo"
+		return_os
+	fi
+fi
+
+echo "$PROG: Error: Unknown OS $OSMAN $OSVER" >&2
+exit 1
+
+

@@ -1,0 +1,201 @@
+# Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# do Trabalho_Final_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final {C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/statemachine.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:54:38 on Feb 23,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final" C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/statemachine.v 
+# -- Compiling module statemachine
+# 
+# Top level modules:
+# 	statemachine
+# End time: 16:54:38 on Feb 23,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final {C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/TX.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:54:38 on Feb 23,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final" C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/TX.v 
+# -- Compiling module TX
+# 
+# Top level modules:
+# 	TX
+# End time: 16:54:38 on Feb 23,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final {C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/SIPO_register.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:54:38 on Feb 23,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final" C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/SIPO_register.v 
+# -- Compiling module SIPO_register
+# 
+# Top level modules:
+# 	SIPO_register
+# End time: 16:54:38 on Feb 23,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final {C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/RX.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:54:38 on Feb 23,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final" C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/RX.v 
+# -- Compiling module RX
+# 
+# Top level modules:
+# 	RX
+# End time: 16:54:39 on Feb 23,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final {C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/ram_mem.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:54:39 on Feb 23,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final" C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/ram_mem.v 
+# -- Compiling module ram_mem
+# 
+# Top level modules:
+# 	ram_mem
+# End time: 16:54:39 on Feb 23,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final {C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/PISO_register.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:54:39 on Feb 23,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final" C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/PISO_register.v 
+# -- Compiling module PISO_register
+# 
+# Top level modules:
+# 	PISO_register
+# End time: 16:54:39 on Feb 23,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final {C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/JK_FF.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:54:39 on Feb 23,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final" C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/JK_FF.v 
+# -- Compiling module JK_FF
+# 
+# Top level modules:
+# 	JK_FF
+# End time: 16:54:39 on Feb 23,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final {C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/D_FF.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:54:39 on Feb 23,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final" C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/D_FF.v 
+# -- Compiling module D_FF
+# 
+# Top level modules:
+# 	D_FF
+# End time: 16:54:39 on Feb 23,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final {C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/device.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:54:39 on Feb 23,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final" C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/device.v 
+# -- Compiling module device
+# 
+# Top level modules:
+# 	device
+# End time: 16:54:39 on Feb 23,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final {C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/counter.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:54:39 on Feb 23,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final" C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/counter.v 
+# -- Compiling module counter
+# 
+# Top level modules:
+# 	counter
+# End time: 16:54:40 on Feb 23,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final {C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/rom_mem.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:54:40 on Feb 23,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final" C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/rom_mem.v 
+# -- Compiling module rom_mem
+# 
+# Top level modules:
+# 	rom_mem
+# End time: 16:54:40 on Feb 23,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final {C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/device_tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:54:40 on Feb 23,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final" C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/device_tb.v 
+# -- Compiling module device_tb
+# 
+# Top level modules:
+# 	device_tb
+# End time: 16:54:40 on Feb 23,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  device_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" device_tb 
+# Start time: 16:54:40 on Feb 23,2022
+# Loading work.device_tb
+# Loading work.device
+# Loading work.TX
+# Loading work.counter
+# Loading work.PISO_register
+# Loading work.D_FF
+# Loading work.JK_FF
+# Loading work.rom_mem
+# Loading work.RX
+# Loading work.SIPO_register
+# Loading work.ram_mem
+# Loading work.statemachine
+# ** Warning: (vsim-3015) C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/device.v(39): [PCDPC] - Port size (8) does not match connection size (4) for port 'Q'. The port definition is at: C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/TX.v(10).
+#    Time: 0 ps  Iteration: 0  Instance: /device_tb/DUT/transmitter File: C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/TX.v
+# ** Warning: (vsim-3015) C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/TX.v(21): [PCDPC] - Port size (4) does not match connection size (8) for port 'Q'. The port definition is at: C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/counter.v(8).
+#    Time: 0 ps  Iteration: 0  Instance: /device_tb/DUT/transmitter/bit_counter File: C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/counter.v
+# ** Warning: (vsim-3015) C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/device.v(54): [PCDPC] - Port size (16) does not match connection size (4) for port 'Q'. The port definition is at: C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/counter.v(8).
+#    Time: 0 ps  Iteration: 0  Instance: /device_tb/DUT/rom_counter File: C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/counter.v
+# ** Warning: (vsim-3017) C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/RX.v(17): [TFMPC] - Too few port connections. Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /device_tb/DUT/receiver/cnt File: C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/counter.v
+# ** Warning: (vsim-3722) C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/RX.v(17): [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: (vsim-3015) C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/device.v(96): [PCDPC] - Port size (16) does not match connection size (4) for port 'Q'. The port definition is at: C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/counter.v(8).
+#    Time: 0 ps  Iteration: 0  Instance: /device_tb/DUT/ram_counter File: C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/counter.v
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 3800 ns
+# ** Error (suppressible): (vsim-PLI-3085) C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/device_tb.v(63): $fwrite : Argument 1 is an unknown file descriptor.
+#    Time: 800 ns  Iteration: 0  Instance: /device_tb
+# ** Error (suppressible): (vsim-PLI-3085) C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/device_tb.v(63): $fwrite : Argument 1 is an unknown file descriptor.
+#    Time: 800 ns  Iteration: 0  Instance: /device_tb
+# ** Error (suppressible): (vsim-PLI-3085) C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/device_tb.v(63): $fwrite : Argument 1 is an unknown file descriptor.
+#    Time: 800 ns  Iteration: 0  Instance: /device_tb
+# ** Error (suppressible): (vsim-PLI-3085) C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/device_tb.v(63): $fwrite : Argument 1 is an unknown file descriptor.
+#    Time: 800 ns  Iteration: 0  Instance: /device_tb
+# ** Error (suppressible): (vsim-PLI-3085) C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/device_tb.v(63): $fwrite : Argument 1 is an unknown file descriptor.
+#    Time: 800 ns  Iteration: 0  Instance: /device_tb
+# ** Error (suppressible): (vsim-PLI-3085) C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/device_tb.v(63): $fwrite : Argument 1 is an unknown file descriptor.
+#    Time: 800 ns  Iteration: 0  Instance: /device_tb
+# ** Error (suppressible): (vsim-PLI-3085) C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/device_tb.v(63): $fwrite : Argument 1 is an unknown file descriptor.
+#    Time: 800 ns  Iteration: 0  Instance: /device_tb
+# ** Error (suppressible): (vsim-PLI-3085) C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/device_tb.v(63): $fwrite : Argument 1 is an unknown file descriptor.
+#    Time: 800 ns  Iteration: 0  Instance: /device_tb
+# ** Error (suppressible): (vsim-PLI-3085) C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/device_tb.v(63): $fwrite : Argument 1 is an unknown file descriptor.
+#    Time: 800 ns  Iteration: 0  Instance: /device_tb
+# ** Error (suppressible): (vsim-PLI-3085) C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/device_tb.v(63): $fwrite : Argument 1 is an unknown file descriptor.
+#    Time: 800 ns  Iteration: 0  Instance: /device_tb
+# ** Error (suppressible): (vsim-PLI-3085) C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/device_tb.v(63): $fwrite : Argument 1 is an unknown file descriptor.
+#    Time: 800 ns  Iteration: 0  Instance: /device_tb
+# ** Error (suppressible): (vsim-PLI-3085) C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/device_tb.v(63): $fwrite : Argument 1 is an unknown file descriptor.
+#    Time: 800 ns  Iteration: 0  Instance: /device_tb
+# ** Error (suppressible): (vsim-PLI-3085) C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/device_tb.v(63): $fwrite : Argument 1 is an unknown file descriptor.
+#    Time: 800 ns  Iteration: 0  Instance: /device_tb
+# ** Error (suppressible): (vsim-PLI-3085) C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/device_tb.v(63): $fwrite : Argument 1 is an unknown file descriptor.
+#    Time: 800 ns  Iteration: 0  Instance: /device_tb
+# ** Error (suppressible): (vsim-PLI-3085) C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/device_tb.v(63): $fwrite : Argument 1 is an unknown file descriptor.
+#    Time: 800 ns  Iteration: 0  Instance: /device_tb
+# ** Error (suppressible): (vsim-PLI-3085) C:/Users/Henrique/Desktop/Trabalho_Final-20220223T011117Z-001/Trabalho_Final/device_tb.v(63): $fwrite : Argument 1 is an unknown file descriptor.
+#    Time: 800 ns  Iteration: 0  Instance: /device_tb
+# End time: 16:55:57 on Feb 23,2022, Elapsed time: 0:01:17
+# Errors: 16, Warnings: 6

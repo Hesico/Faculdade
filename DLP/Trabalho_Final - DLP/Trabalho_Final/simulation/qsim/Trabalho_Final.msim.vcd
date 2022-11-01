@@ -1,0 +1,713 @@
+$comment
+	File created using the following command:
+		vcd file Trabalho_Final.msim.vcd -direction
+$end
+$date
+	Mon Feb 21 20:27:42 2022
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module device_vlg_vec_tst $end
+$var reg 1 ! clk $end
+$var reg 1 " rst $end
+$var reg 1 # start $end
+$var wire 1 $ received_data [7] $end
+$var wire 1 % received_data [6] $end
+$var wire 1 & received_data [5] $end
+$var wire 1 ' received_data [4] $end
+$var wire 1 ( received_data [3] $end
+$var wire 1 ) received_data [2] $end
+$var wire 1 * received_data [1] $end
+$var wire 1 + received_data [0] $end
+$var wire 1 , received_n $end
+$var wire 1 - sent_n $end
+
+$scope module i1 $end
+$var wire 1 . gnd $end
+$var wire 1 / vcc $end
+$var wire 1 0 unknown $end
+$var tri1 1 1 devclrn $end
+$var tri1 1 2 devpor $end
+$var tri1 1 3 devoe $end
+$var wire 1 4 sent_n~output_o $end
+$var wire 1 5 received_n~output_o $end
+$var wire 1 6 received_data[0]~output_o $end
+$var wire 1 7 received_data[1]~output_o $end
+$var wire 1 8 received_data[2]~output_o $end
+$var wire 1 9 received_data[3]~output_o $end
+$var wire 1 : received_data[4]~output_o $end
+$var wire 1 ; received_data[5]~output_o $end
+$var wire 1 < received_data[6]~output_o $end
+$var wire 1 = received_data[7]~output_o $end
+$var wire 1 > clk~input_o $end
+$var wire 1 ? sm1|state~0_combout $end
+$var wire 1 @ rst~input_o $end
+$var wire 1 A sm1|state~q $end
+$var wire 1 B sm1|smOut~combout $end
+$var wire 1 C start~input_o $end
+$var wire 1 D transmitter|comb~0_combout $end
+$var wire 1 E transmitter|FF1|q~q $end
+$var wire 1 F transmitter|bit_counter|Q[0]~7_combout $end
+$var wire 1 G transmitter|bit_counter|Q[1]~8_combout $end
+$var wire 1 H transmitter|bit_counter|Q[1]~9 $end
+$var wire 1 I transmitter|bit_counter|Q[2]~10_combout $end
+$var wire 1 J transmitter|FF2|Mux0~0_combout $end
+$var wire 1 K transmitter|bit_counter|Q[2]~11 $end
+$var wire 1 L transmitter|bit_counter|Q[3]~12_combout $end
+$var wire 1 M transmitter|bit_counter|Q[3]~13 $end
+$var wire 1 N transmitter|bit_counter|Q[4]~14_combout $end
+$var wire 1 O transmitter|bit_counter|Q[4]~15 $end
+$var wire 1 P transmitter|bit_counter|Q[5]~16_combout $end
+$var wire 1 Q transmitter|bit_counter|Q[5]~17 $end
+$var wire 1 R transmitter|bit_counter|Q[6]~18_combout $end
+$var wire 1 S transmitter|FF2|Mux0~1_combout $end
+$var wire 1 T transmitter|bit_counter|Q[6]~19 $end
+$var wire 1 U transmitter|bit_counter|Q[7]~20_combout $end
+$var wire 1 V transmitter|FF2|Mux0~2_combout $end
+$var wire 1 W transmitter|FF2|q~q $end
+$var wire 1 X receiver|FF1|q~q $end
+$var wire 1 Y receiver|cnt|Q[0]~7_combout $end
+$var wire 1 Z receiver|cnt|Q[1]~8_combout $end
+$var wire 1 [ receiver|cnt|Q[1]~9 $end
+$var wire 1 \ receiver|cnt|Q[2]~10_combout $end
+$var wire 1 ] receiver|FF2|Mux0~0_combout $end
+$var wire 1 ^ receiver|cnt|Q[2]~11 $end
+$var wire 1 _ receiver|cnt|Q[3]~12_combout $end
+$var wire 1 ` receiver|cnt|Q[3]~13 $end
+$var wire 1 a receiver|cnt|Q[4]~14_combout $end
+$var wire 1 b receiver|cnt|Q[4]~15 $end
+$var wire 1 c receiver|cnt|Q[5]~16_combout $end
+$var wire 1 d receiver|cnt|Q[5]~17 $end
+$var wire 1 e receiver|cnt|Q[6]~18_combout $end
+$var wire 1 f receiver|FF2|Mux0~1_combout $end
+$var wire 1 g receiver|cnt|Q[6]~19 $end
+$var wire 1 h receiver|cnt|Q[7]~20_combout $end
+$var wire 1 i receiver|FF2|Mux0~2_combout $end
+$var wire 1 j receiver|FF2|q~q $end
+$var wire 1 k transmitter|bit_counter|Q [7] $end
+$var wire 1 l transmitter|bit_counter|Q [6] $end
+$var wire 1 m transmitter|bit_counter|Q [5] $end
+$var wire 1 n transmitter|bit_counter|Q [4] $end
+$var wire 1 o transmitter|bit_counter|Q [3] $end
+$var wire 1 p transmitter|bit_counter|Q [2] $end
+$var wire 1 q transmitter|bit_counter|Q [1] $end
+$var wire 1 r transmitter|bit_counter|Q [0] $end
+$var wire 1 s receiver|cnt|Q [7] $end
+$var wire 1 t receiver|cnt|Q [6] $end
+$var wire 1 u receiver|cnt|Q [5] $end
+$var wire 1 v receiver|cnt|Q [4] $end
+$var wire 1 w receiver|cnt|Q [3] $end
+$var wire 1 x receiver|cnt|Q [2] $end
+$var wire 1 y receiver|cnt|Q [1] $end
+$var wire 1 z receiver|cnt|Q [0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+1"
+1#
+0+
+0*
+0)
+0(
+0'
+0&
+0%
+0$
+0,
+0-
+0.
+1/
+x0
+11
+12
+13
+04
+05
+06
+07
+08
+09
+0:
+0;
+0<
+0=
+0>
+1?
+1@
+0A
+0B
+1C
+1D
+0E
+0F
+0G
+0H
+0I
+1J
+1K
+0L
+0M
+0N
+1O
+0P
+0Q
+0R
+1S
+1T
+0U
+1V
+0W
+0X
+0Y
+0Z
+0[
+0\
+1]
+1^
+0_
+0`
+0a
+1b
+0c
+0d
+0e
+1f
+1g
+0h
+1i
+0j
+0r
+0q
+0p
+0o
+0n
+0m
+0l
+0k
+0z
+0y
+0x
+0w
+0v
+0u
+0t
+0s
+$end
+#20000
+0#
+1!
+0"
+0C
+0@
+1>
+0D
+1A
+1j
+1W
+14
+15
+1,
+1-
+1B
+0?
+1D
+1E
+1X
+1F
+1Y
+#40000
+0!
+0>
+#60000
+1!
+1>
+1z
+1r
+0A
+1Z
+0Y
+1G
+0F
+0B
+0D
+#80000
+0!
+0>
+#100000
+1!
+1>
+1y
+0z
+1q
+0r
+1Y
+1F
+#120000
+0!
+0>
+#140000
+1!
+1>
+1z
+1r
+1[
+1H
+0Z
+0Y
+0G
+0F
+1\
+1I
+#160000
+0!
+0>
+#180000
+1!
+1>
+1x
+0y
+0z
+1p
+0q
+0r
+0^
+0[
+0K
+0H
+0\
+1Y
+0I
+1F
+1^
+1K
+1_
+1\
+1L
+1I
+0_
+0L
+#200000
+0!
+0>
+#220000
+1!
+1>
+1z
+1r
+1Z
+0Y
+1G
+0F
+#240000
+0!
+0>
+#260000
+1!
+1>
+1y
+0z
+1q
+0r
+1Y
+1F
+#280000
+0!
+0>
+#300000
+1!
+1>
+1z
+1r
+0]
+1[
+0J
+1H
+0Z
+0Y
+0G
+0F
+0^
+0K
+0\
+0I
+1_
+1L
+#320000
+0!
+0>
+#340000
+1!
+1>
+1w
+0x
+0y
+0z
+1o
+0p
+0q
+0r
+1`
+1]
+1^
+0[
+1M
+1J
+1K
+0H
+0_
+1\
+1Y
+0L
+1I
+1F
+0`
+0M
+1a
+1_
+0\
+1N
+1L
+0I
+0a
+0N
+#360000
+0!
+0>
+#380000
+1!
+1>
+1z
+1r
+1Z
+0Y
+1G
+0F
+#400000
+0!
+0>
+#420000
+1!
+1>
+1y
+0z
+1q
+0r
+1Y
+1F
+#440000
+0!
+0>
+#460000
+1!
+1>
+1z
+1r
+1[
+1H
+0Z
+0Y
+0G
+0F
+1\
+1I
+#480000
+0!
+0>
+#500000
+1!
+1>
+1x
+0y
+0z
+1p
+0q
+0r
+0^
+0[
+0K
+0H
+0\
+1Y
+0I
+1F
+1`
+1^
+1M
+1K
+0_
+1\
+0L
+1I
+0`
+0M
+1a
+1_
+1N
+1L
+0a
+0N
+#520000
+0!
+0>
+#540000
+1!
+1>
+1z
+1r
+1Z
+0Y
+1G
+0F
+#560000
+0!
+0>
+#580000
+1!
+1>
+1y
+0z
+1q
+0r
+1Y
+1F
+#600000
+0!
+0>
+#620000
+1!
+1>
+1z
+1r
+0]
+1[
+0J
+1H
+0Z
+0Y
+0G
+0F
+0^
+0K
+0\
+0I
+1`
+1M
+0_
+0L
+1a
+1N
+#640000
+0!
+0>
+#660000
+1!
+1>
+1v
+0w
+0x
+0y
+0z
+1n
+0o
+0p
+0q
+0r
+0b
+0`
+1]
+1^
+0[
+0O
+0M
+1J
+1K
+0H
+0a
+1_
+1\
+1Y
+0N
+1L
+1I
+1F
+1b
+1O
+1c
+1a
+0_
+0\
+1P
+1N
+0L
+0I
+0c
+0P
+#680000
+0!
+0>
+#700000
+1!
+1>
+1z
+1r
+1Z
+0Y
+1G
+0F
+#720000
+0!
+0>
+#740000
+1!
+1>
+1y
+0z
+1q
+0r
+1Y
+1F
+#760000
+0!
+0>
+#780000
+1!
+1>
+1z
+1r
+1[
+1H
+0Z
+0Y
+0G
+0F
+1\
+1I
+#800000
+0!
+0>
+#820000
+1!
+1>
+1x
+0y
+0z
+1p
+0q
+0r
+0^
+0[
+0K
+0H
+0\
+1Y
+0I
+1F
+1^
+1K
+1_
+1\
+1L
+1I
+0_
+0L
+#840000
+0!
+0>
+#860000
+1!
+1>
+1z
+1r
+1Z
+0Y
+1G
+0F
+#880000
+0!
+0>
+#900000
+1!
+1>
+1y
+0z
+1q
+0r
+1Y
+1F
+#920000
+0!
+0>
+#940000
+1!
+1>
+1z
+1r
+0]
+1[
+0J
+1H
+0Z
+0Y
+0G
+0F
+0^
+0K
+0\
+0I
+1_
+1L
+#960000
+0!
+0>
+#980000
+1!
+1>
+1w
+0x
+0y
+0z
+1o
+0p
+0q
+0r
+1`
+1]
+1^
+0[
+1M
+1J
+1K
+0H
+0_
+1\
+1Y
+0L
+1I
+1F
+0b
+0`
+0O
+0M
+0a
+1_
+0\
+0N
+1L
+0I
+1b
+1O
+1c
+1a
+1P
+1N
+0c
+0P
+#1000000

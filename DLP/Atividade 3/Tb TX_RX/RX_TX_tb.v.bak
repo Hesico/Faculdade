@@ -1,0 +1,59 @@
+`timescale 1ns/10ps
+
+module RX_TX_tb();
+
+reg [3:0] A,B,C,D;
+reg ld_A,ld_B,ld_C,ld_D;
+reg clk;
+reg transmit;
+
+wire recevA,recevB,recevC,recevD;
+wire received;
+
+initial 
+fork
+		 transmit = 1'b0;
+		 A = 4'b0110;
+		 B = 4'b1000;
+		 C = 4'b1111;
+		 D = 4'b0101;
+		 ld_A = 1'b1;
+		 ld_B = 1'b1;
+		 ld_C = 1'b1;
+		 ld_D = 1'b1;
+	#50 transmit = 1'b1;
+	#70 transmit = 1'b0;
+
+join
+
+
+initial
+begin
+
+		clk = 1'b0;
+		forever
+		begin
+			#10 clk = ~clk;
+		end
+end
+
+
+TX_RX DUT(
+			.A(A),
+			.B(B),
+			.C(C),
+			.D(D),
+			.ld_A(ld_A),
+			.ld_B(ld_B),
+			.ld_C(ld_C),
+			.ld_D(ld_D),
+			.clk(clk),
+			.transmit(transmit),
+			.recevA(recevA),
+			.recevB(recevB),
+			.recevC(recevC),
+			.recevD(recevD),
+			.received(received)
+			);
+
+endmodule
